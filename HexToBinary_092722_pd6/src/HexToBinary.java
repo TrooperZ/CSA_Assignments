@@ -9,6 +9,8 @@ public class HexToBinary
     public static String getBinary(char hex )
     {
         hex = Character.toUpperCase(hex);
+        
+        // DO NOT USE THIS APPLICATION! THIS IS AN ADVANCED METHOD! USE THE ONE AT THE BOTTOM
 
         HashMap<Character, String> hashMap = new HashMap<Character, String>();
 
@@ -35,7 +37,17 @@ public class HexToBinary
        else {
             return hashMap.get(hex);
        }
-
+        
+       //USE THIS
+       if (char == '0'){
+           return "0000";
+       }
+       // repeat with each char in hashmap
+       // ...
+       // ...
+       else {
+           return "ERROR";
+       }
     }
 }
 
