@@ -39,10 +39,10 @@ public class HexToBinary
        }
         
        //USE THIS
-       if (char == '0'){
-           return "0000";
+       if (char == 'A'){
+           return "1010";
        }
-       // repeat with each char in hashmap
+       // repeat with each char A-F in hashmap
        // ...
        // ...
        else {
