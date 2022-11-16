@@ -23,6 +23,18 @@ public class Fibonacci
             }
         }
     }
+    public boolean inRange(long num){
+        int encounters = 0;
+        for (int i = 0; i<fibArray.length; i++) {
+            if (fibArray[i] == num) {
+                encounters++;
+            }
+        }
+        if (encounters>0) {
+            return true;
+                }
+        return false;
+    }
     public String toString()
     {
         String output = "";
