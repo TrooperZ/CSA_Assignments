@@ -5,18 +5,18 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 > This github repo is under reorganization. Any new assignments will be posted under `the Lab_Assignments` folder, but older ones will be placed in their respective cycle folder and their assignment description will be posted on this README file. Once all older files have been caught up, the new assignments will follow the schema.  For quick access, click the assignment links below.
 
 
-### [Cycle 1](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#cycle-1-assignments) (08/22/22 - 09/30/22):
-- [Welcome](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#082222_1)
-- [Variables](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#variables)
-- [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#classstructure)
-- [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#starsandstripes)
-- [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#conefrustrumtsa)
-- [BigOrSmall](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#bigorsmall)
-- [Temperature](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#temperature)
-- [DayOfWeek](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#dayofweek)
-- [Tweet](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#tweet)
+### [Cycle 1](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-1-assignments) (08/22/22 - 09/30/22):
+- [Welcome](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#082222_1)
+- [Variables](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#variables)
+- [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#classstructure)
+- [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#starsandstripes)
+- [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#conefrustrumtsa)
+- [BigOrSmall](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#bigorsmall)
+- [Temperature](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#temperature)
+- [DayOfWeek](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#dayofweek)
+- [Tweet](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#tweet)
 - [HexToBinary](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#hextobinary)
-- [DrawIt](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#drawit)
+- [DrawIt](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#drawit)
 
 ### [Cycle 2](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#cycle-2-assignments) (10/03/22 - 11/11/22):
 
