@@ -75,9 +75,8 @@ public class Point {
     }
 
     public double distanceTo(Point point){
-        double calc = Math.sqrt(Math.pow(point.getX() - x, 2)+ Math.pow(point.getY() - y, 2));
         DecimalFormat d = new DecimalFormat("#.####");
-        return Double.parseDouble(d.format(calc));
+        return Double.parseDouble(d.format(Math.sqrt(Math.pow(point.getX() - x, 2)+ Math.pow(point.getY() - y, 2))));
     }
 
     public void moveVertical(double amt){
