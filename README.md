@@ -6,8 +6,10 @@ All CSA assignments I did for junior year.
 - [Variables](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#variables)
 - [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#starsandstripes)
 
-## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/082222_1)
+## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/082222_1) 
 Objective: Print out a string and learn the IDE.
+
+<sub><sup>08/22/22</sup></sub>
 ___
 
 ## [Variables](https://github.com/TrooperZ/CSA_Assignments/tree/main/variables_082322)
@@ -66,6 +68,8 @@ Sample Output:
 *stringOne = hello world        *
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ```
+
+<sub><sup>08/23/22</sup></sub>
 ___
 
 ## [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/tree/main/Class_082922/src)
