@@ -20,6 +20,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 ### [Cycle 2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-2-assignments) (10/03/22 - 11/11/22):
 - [LeapYear](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#leapyear)
+- [MouseEvent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mouseevent)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -376,6 +377,15 @@ Enter a year :: 1600
 <sub><sup>10/03/22</sup></sub>
 ___
 
+## [MouseEvent](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/MouseEvent)
+Objective: Write a program that will test to see which mouse button was pressed.  If the left 
+mouse button is pressed, draw a square at that location.  If the right mouse button is pressed, draw a circle at 
+that location.  If the center wheel button is pressed, draw both circle and square, or draw another shape. Feel 
+free to change the colors, sizes, and shapes however you want.   
+Note that for every button clicked, it prints a string on the upper left area of the canvas which button was 
+activated. You must have different colors for each string printed. 
 
+<sub><sup>10/07/22</sup></sub>
+___
 
 
