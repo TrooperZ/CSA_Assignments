@@ -25,7 +25,8 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [GuessingGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#guessinggame)
 - [xTable](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#xtable)
 - [BoxWord](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#boxword)
-- 
+- [TriWord](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#triword)
+
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
 ## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Welcome)
