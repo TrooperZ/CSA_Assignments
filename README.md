@@ -9,14 +9,21 @@ All CSA assignments I did for junior year.
 - [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#conefrustrumtsa)
 - [BigOrSmall](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#bigorsmall)
 - [Temperature](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#temperature)
+- [DayOfWeek](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#dayofweek)
+- [Tweet](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#tweet)
+- [DrawIt](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#drawit)
 
-## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Welcome)
+### Cycle 2 (10/03/22 - 11/11/22):
+
+
+
+## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Welcome)
 Objective: Print out a string and learn the IDE.
 
 <sub><sup>08/22/22</sup></sub>
 ___
 
-## [Variables](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Variables)
+## [Variables](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Variables)
 Objective: Define 1 variable of each type: byte, short, int, long, float, double, char, boolean, String
 
 Code Stem:
@@ -76,13 +83,13 @@ Sample Output:
 <sub><sup>08/23/22</sup></sub>
 ___
 
-## [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/tree/main/Class)
+## [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Class)
 Objective: Write 2 instance variables, 3 constructors, all mutator (set) methods, all accessor (get) methods, and a helper method (to print the state of the object).
 
 <sub><sup>08/29/22</sup></sub>
 ___
 
-## [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/tree/main/SAS)
+## [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/SAS)
 Objective: Write methods for class Stars and Stripes.  Then, call the methods to create the stars and stripes patterns shown below.  Make your own pattern for extra credit.
 
 Code Stem:
@@ -150,7 +157,7 @@ StarsAndStripes
 <sub><sup>09/07/22</sup></sub>
 ___
 
-## [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/tree/main/ConeFrustumTSA)
+## [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/ConeFrustumTSA)
 Objective: A frustum of a cone has the following measurement: (1) R = big radius (2) z = angle of elevation of  lateral side (3) h = height  [The small radius is not measured.]
 
 Create a class ConeFrustum with those variables above as instance variables.
@@ -168,7 +175,7 @@ Every math function you know is in the class Math.
 
 ___
 
-## [BigOrSmall](https://github.com/TrooperZ/CSA_Assignments/tree/main/BoxWord_101722_pd6/src)
+## [BigOrSmall](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/BigOrSmall)
 Objective: Write a program to check 2 parameters.  If a is > b, return "yes".  If b is > a, return "no".  If a is equal to b, return "cvhs". At least two if statements, do not use if-else or if-elseif.
 
 Sample Data: 
@@ -200,7 +207,7 @@ yes
 <sub><sup>09/13/22</sup></sub>
 ___
 
-## [Temperature](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Temperature)
+## [Temperature](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Temperature)
 Objective: Given a temperature (typed in by user) in one scale you must print the temperature in the other scales. Use of If-else-if is suggested.
 Temperature scales: (1) Celsius (2) Kelvin (3) Fahrenheit and (4) Rankine             
 
@@ -214,6 +221,69 @@ The main() program flow:
 
 <sub><sup>09/14/22</sup></sub>
 ___
+
+## [DayOfWeek](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/DayOfWeek)
+Objective: Currently Unknown
+
+<sub><sup>09/1/22</sup></sub>
+___
+
+## [Tweet](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Tweet)
+Objective: For this problem, you need to make a Tweet class.
+
+The first instance variable will store the message, the second instance variable will store the number of retweets, and the third instance variable will store the number of likes.
+
+The Tweet class will have 1 constructor that takes in values for the message, retweets, and likes and 6 methods:
+
+- `addLikes` will increase likes by the value passed in
+- `addRetweets` will increase retweets by the value pass in.
+- `notLiked` will return true if there are fewer than 10 likes.
+- `kindaLiked `will return true if there are more likes than retweets.
+- `isTrending` returns true if retweets plus likes is greater than 75.
+
+The `ToString` method will return all instance variables within a single statement. 
+
+Sample Runner:
+```
+//test user inputs: str=“CVHS”, rtwts=0, and lks=0
+Tweet sample = new Tweet( str, rtwts , lks );
+sample.addLikes( 3 );
+sample.addRetweets( 28 );
+System.out.println( sample.notLiked() );    
+System.out.println( sample.kindaLiked() );            
+sample.addLikes( 35 );                
+System.out.println( sample.kindaLiked() );
+System.out.println( sample.isTrending() );        
+sample.addLikes( 13 );
+sample.addRetweets( 47 );
+System.out.println( sample.notLiked() );
+System.out.println( sample.kindaLiked() );        
+System.out.println( sample.isTrending() );
+System.out.println( sample );
+```
+
+Sample Output : 
+```
+true
+false
+true
+false
+false
+false
+true
+msg: “CVHS has 75 retweets and 51 likes.”
+```
+
+<sub><sup>09/14/22</sup></sub>
+___
+
+## [DrawIt](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/DrawIt)
+Objective: For this assignment, you will create a drawing program that will draw pictures on your screen.  You will use the arrow keys to control the pen as it draws the shape of your choice on the screen.  
+
+- Determine how to use an array to store key presses.
+- Determine how to move the pen around the screen as each key is pressed.
+- Add in code to clear the screen and reset the pen to the center of the screen when the space bar is pressed.
+
 
 ## [Alligator](https://github.com/TrooperZ/CSA_Assignments/tree/main/Alligator_102122_pd6/src)
 Objective: Create a class given certain requirements (requirements currently unknown)
