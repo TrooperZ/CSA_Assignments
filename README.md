@@ -19,7 +19,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [DrawIt](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#drawit)
 
 ### [Cycle 2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-2-assignments) (10/03/22 - 11/11/22):
-
+- [LeapYear](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#leapyear)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -336,7 +336,7 @@ ___
 ## [LeapYear](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/LeapYear)
 Objective: Write a program to determine if a year is a leap year.  For this program, a leap year is any year evenly divisible by 4.  You will need to use mod %.
 
-![leap year flow chart](https://github.com/TrooperZ/CSA_Assignments/blob/main/Lab_Assignments/Cycle2/LeapYear_100322_pd6/LeapYearFlowchart.jpeg)
+<img src="https://github.com/TrooperZ/CSA_Assignments/blob/main/Lab_Assignments/Cycle2/LeapYear_100322_pd6/LeapYearFlowchart.jpeg" width="250">
 
 Sample Data: 
 ```
