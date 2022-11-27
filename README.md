@@ -1,7 +1,7 @@
 # AP CSA Assignments
-All CSA assignments I did for junior year. 
+All CSA assignments I did for junior year. 6th Period Armand Ramones
 
-### Cycle 1 (08/22/22 - 09/30/22):
+### [Cycle 1](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#cycle-1-assignments) (08/22/22 - 09/30/22):
 - [Welcome](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#082222_1)
 - [Variables](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#variables)
 - [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#classstructure)
@@ -16,6 +16,7 @@ All CSA assignments I did for junior year.
 ### Cycle 2 (10/03/22 - 11/11/22):
 
 
+# Cycle 1 Assignments
 
 ## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Welcome)
 Objective: Print out a string and learn the IDE.
@@ -277,6 +278,42 @@ msg: “CVHS has 75 retweets and 51 likes.”
 <sub><sup>09/20/22</sup></sub>
 ___
 
+## [HexToBinary](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/HexToBinary)
+Objective: onvert each hex character to its binary equivalent.  The only HEX characters will be 
+in the range A-F.
+
+Sample Data:
+```
+A
+B
+C
+D
+E
+F
+X
+```
+
+Sample Output: 
+```
+Enter a letter :: A
+A is 1010 in binary!
+Enter a letter :: B
+B is 1011 in binary!
+Enter a letter :: C
+C is 1100 in binary!
+Enter a letter :: D
+D is 1101 in binary!
+Enter a letter :: E
+E is 1110 in binary!
+Enter a letter :: F
+F is 1111 in binary!
+Enter a letter :: X
+X is ERROR in binary!
+```
+
+<sub><sup>09/27/22</sup></sub>
+___
+
 ## [DrawIt](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/DrawIt)
 Objective: For this assignment, you will create a drawing program that will draw pictures on your screen.  You will use the arrow keys to control the pen as it draws the shape of your choice on the screen.  
 
@@ -286,6 +323,8 @@ Objective: For this assignment, you will create a drawing program that will draw
 
 <sub><sup>09/30/22</sup></sub>
 ___
+
+# Cycle 2 Assignments
 
 
 
