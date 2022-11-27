@@ -225,7 +225,7 @@ ___
 ## [DayOfWeek](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/DayOfWeek)
 Objective: Currently Unknown
 
-<sub><sup>09/1/22</sup></sub>
+<sub><sup>09/19/22</sup></sub>
 ___
 
 ## [Tweet](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Tweet)
@@ -274,7 +274,7 @@ true
 msg: “CVHS has 75 retweets and 51 likes.”
 ```
 
-<sub><sup>09/14/22</sup></sub>
+<sub><sup>09/20/22</sup></sub>
 ___
 
 ## [DrawIt](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/DrawIt)
@@ -284,9 +284,7 @@ Objective: For this assignment, you will create a drawing program that will draw
 - Determine how to move the pen around the screen as each key is pressed.
 - Add in code to clear the screen and reset the pen to the center of the screen when the space bar is pressed.
 
-
-## [Alligator](https://github.com/TrooperZ/CSA_Assignments/tree/main/Alligator_102122_pd6/src)
-Objective: Create a class given certain requirements (requirements currently unknown)
+<sub><sup>09/30/22</sup></sub>
 ___
 
 
