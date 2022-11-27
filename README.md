@@ -7,6 +7,7 @@ All CSA assignments I did for junior year.
 - [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#starsandstripes)
 - [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#conefrustrumtsa)
 - [BigOrSmall](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#bigorsmall)
+- [Temperature](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#temperature)
 
 ## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Welcome)
 Objective: Print out a string and learn the IDE.
