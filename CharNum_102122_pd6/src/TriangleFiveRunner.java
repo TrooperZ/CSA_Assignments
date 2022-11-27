@@ -2,7 +2,6 @@ public class TriangleFiveRunner{
 
     public static void main(String[] args) {
 
-
         TriangleFive tf = new TriangleFive('C',4);
         TriangleFive tf1 = new TriangleFive('A',5);
         TriangleFive tf2 = new TriangleFive('B',7);
