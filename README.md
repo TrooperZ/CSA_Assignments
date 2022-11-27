@@ -18,7 +18,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [HexToBinary](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#hextobinary)
 - [DrawIt](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#drawit)
 
-### Cycle 2 (10/03/22 - 11/11/22):
+### [Cycle 2](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#cycle-2-assignments) (10/03/22 - 11/11/22):
 
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
@@ -331,6 +331,50 @@ ___
 
 # [Cycle 2 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
+___
+
+## [LeapYear](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/LeapYear)
+Objective: Write a program to determine if a year is a leap year.  For this program, a leap year is any year evenly divisible by 4.  You will need to use mod %.
+
+![leap year flow chart](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/LeapYear/LeapYearFlowchar.jpeg)
+
+Sample Data: 
+```
+1253
+209
+2131
+400
+4000
+1500
+1600
+```
+
+Sample Output: 
+```
+Enter a year :: 1253
+1253 is NOT a leap year.
+
+Enter a year :: 209
+209 is NOT a leap year.
+
+Enter a year :: 2131
+2131 is NOT a leap year.
+
+Enter a year :: 400
+400 is a leap year.
+
+Enter a year :: 4000
+4000 is a leap year.	
+
+Enter a year :: 1500
+1500 is NOT a leap year.
+
+Enter a year :: 1600
+1600 is a leap year.
+```
+
+<sub><sup>10/03/22</sup></sub>
+___
 
 
 
