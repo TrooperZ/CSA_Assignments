@@ -24,7 +24,8 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Multiples10](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#multiples10)
 - [GuessingGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#guessinggame)
 - [xTable](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#xtable)
-
+- [BoxWord](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#boxword)
+- 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
 ## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Welcome)
@@ -487,5 +488,81 @@ Expected Output:
 <sub><sup>10/15/22</sup></sub>
 ___
 
+## [BoxWord](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/BoxWord)
+Objective: Use nested loops to print out the square word pattern show below.
 
+Sample Data:
+```
+SQUARE
+BOX
+A
+IT
+TOAD
+```
 
+Expected Output:
+```
+SQUARE
+Q    R
+U    A
+A    U
+R    Q
+ERAUQS
+BOX
+O O
+XOB
+A
+IT
+TI
+TOAD
+O  A
+A  O
+DAOT
+```
+
+<sub><sup>10/17/22</sup></sub>
+___
+## [TriWord](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/TriWord)
+Objective: Use nested loops to print out the triangle word pattern show below.
+
+Sample Data:
+```
+WOW
+BEN
+SAMMY
+WILE
+APLUSCOMPSCI
+```
+
+Expected Output:
+```
+  W
+ O O
+WOWOW
+  B
+ E E
+NEBEN
+    S
+   A A
+  M   M
+ M     M
+YMMASAMMY
+   W
+  I I
+ L   L
+ELIWILE
+           A
+          P P
+         L   L
+        U     U
+       S       S
+      C         C
+     O           O
+    M             M
+   P               P
+  S                 S
+ C                   C
+ICSPMOCSULPAPLUSCOMPSCI
+```
+
+<sub><sup>10/19/22</sup></sub>
