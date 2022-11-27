@@ -21,6 +21,8 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 ### [Cycle 2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-2-assignments) (10/03/22 - 11/11/22):
 - [LeapYear](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#leapyear)
 - [MouseEvent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mouseevent)
+- [Multiples10](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#multiples10)
+- [GuessingGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#guessinggame)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -388,4 +390,79 @@ activated. You must have different colors for each string printed.
 <sub><sup>10/07/22</sup></sub>
 ___
 
+## [Multiples10](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/Multiples10)
+Objective: Write a method that will return multiples of ten based on the parameter passed in.  If 
+x is less than or equal to 0, return "CVHS". The call `go( 3 )` would return "102030"
+
+Sample Data:
+```
+1
+2
+13
+4
+10
+-5
+0
+6
+```
+
+Sample Output:
+```
+10
+1020
+102030405060708090100110120130
+10203040
+102030405060708090100
+CVHS
+CVHS
+102030405060
+```
+
+
+<sub><sup>10/08/22</sup></sub>
+___
+
+## [GuessingGame](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/GuessingGame)
+Objective:  Create  a  guessing  game  that  allows  you  to  enter  the  number  of  numbers  in  the 
+guessing  game.      The  game  will  randomly (`Math.random()`)  pick  a  number  in  the  range  provided  and  then 
+allow  you  to  guess  the  number.      The  game  will  keep  track  of  the  number  of  guesses  and  tell  you  what 
+percentage of the time you guessed incorrectly.
+
+Sample Output:
+```
+Guessing Game - how many numbers? 5
+Enter a number between 1 and 5 1
+Enter a number between 1 and 5 2
+Enter a number between 1 and 5 3
+It took 3 guesses to guess 3.
+You guessed wrong 40 percent of the time.
+Do you want to play again? y
+Guessing Game - how many numbers? 5
+Enter a number between 1 and 5 -3
+Number out of range!
+Enter a number between 1 and 5 9
+Number out of range!
+Enter a number between 1 and 5 1
+Enter a number between 1 and 5 2
+Enter a number between 1 and 5 3
+Enter a number between 1 and 5 4
+It took 4 guesses to guess 4 .
+You guessed wrong 60 percent of the time.
+Do you want to play again? y
+Guessing Game - how many numbers? 20
+Enter a number between 1 and 20 1
+Enter a number between 1 and 20 2
+Enter a number between 1 and 20 3
+Enter a number between 1 and 20 4
+Enter a number between 1 and 20 5
+Enter a number between 1 and 20 6
+Enter a number between 1 and 20 7
+Enter a number between 1 and 20 8
+It took 8 guesses to guess 8 .
+You guessed wrong 35 percent of the time.
+Do you want to play again? n
+```
+
+<sub><sup>10/13/22</sup></sub>
+___
 
