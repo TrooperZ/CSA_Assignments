@@ -336,7 +336,7 @@ ___
 ## [LeapYear](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/LeapYear)
 Objective: Write a program to determine if a year is a leap year.  For this program, a leap year is any year evenly divisible by 4.  You will need to use mod %.
 
-![leap year flow chart](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/LeapYear/LeapYearFlowchar.jpeg)
+![leap year flow chart](https://github.com/TrooperZ/CSA_Assignments/blob/main/Lab_Assignments/Cycle2/LeapYear_100322_pd6/LeapYearFlowchart.jpeg)
 
 Sample Data: 
 ```
