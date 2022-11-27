@@ -4,6 +4,7 @@ All CSA assignments I did for junior year.
 ### Cycle 1 (08/22/22 - 09/30/22):
 - [Welcome](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#082222_1)
 - [Variables](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#variables)
+- [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#classstructure)
 - [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#starsandstripes)
 - [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#conefrustrumtsa)
 - [BigOrSmall](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#bigorsmall)
