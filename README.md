@@ -1,5 +1,9 @@
 # AP CSA Assignments
-All CSA assignments I did for junior year. 6th Period Armand Ramones
+All CSA coding assignments I did for junior year. 6th Period Armand Ramones
+
+
+> This github repo is under reorganization. Any new assignments will be posted under `the Lab_Assignments` folder, but older ones will be placed in their respective cycle folder and their assignment description will be posted on this README file. Once all older files have been caught up, the new assignments will follow the schema.  For quick access, click the assignment links below.
+
 
 ### [Cycle 1](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#cycle-1-assignments) (08/22/22 - 09/30/22):
 - [Welcome](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#082222_1)
@@ -11,12 +15,13 @@ All CSA assignments I did for junior year. 6th Period Armand Ramones
 - [Temperature](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#temperature)
 - [DayOfWeek](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#dayofweek)
 - [Tweet](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#tweet)
+- [HexToBinary](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#hextobinary)
 - [DrawIt](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#drawit)
 
 ### Cycle 2 (10/03/22 - 11/11/22):
 
 
-# Cycle 1 Assignments
+# [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
 ## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Welcome)
 Objective: Print out a string and learn the IDE.
@@ -324,7 +329,7 @@ Objective: For this assignment, you will create a drawing program that will draw
 <sub><sup>09/30/22</sup></sub>
 ___
 
-# Cycle 2 Assignments
+# [Cycle 2 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
 
 
