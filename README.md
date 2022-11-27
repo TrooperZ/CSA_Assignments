@@ -1,18 +1,18 @@
 # CSA_Assignments
 All CSA assignments I did for junior year. 
 
-### Cycle 1:
+### Cycle 1 (08/22/22 - 09/30/22):
 - [Welcome](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#082222_1)
 - [Variables](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#variables)
 - [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/edit/main/README.md#starsandstripes)
 
-## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/082222_1) 
+## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Welcome)
 Objective: Print out a string and learn the IDE.
 
 <sub><sup>08/22/22</sup></sub>
 ___
 
-## [Variables](https://github.com/TrooperZ/CSA_Assignments/tree/main/variables_082322)
+## [Variables](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Variables)
 Objective: Define 1 variable of each type: byte, short, int, long, float, double, char, boolean, String
 
 Code Stem:
@@ -72,11 +72,13 @@ Sample Output:
 <sub><sup>08/23/22</sup></sub>
 ___
 
-## [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/tree/main/Class_082922/src)
+## [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/tree/main/Class)
 Objective: Write 2 instance variables, 3 constructors, all mutator (set) methods, all accessor (get) methods, and a helper method (to print the state of the object).
+
+<sub><sup>08/29/22</sup></sub>
 ___
 
-## [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/tree/main/SAS_090722_pd6)
+## [StarsAndStripes](https://github.com/TrooperZ/CSA_Assignments/tree/main/SAS)
 Objective: Write methods for class Stars and Stripes.  Then, call the methods to create the stars and stripes patterns shown below.  Make your own pattern for extra credit.
 
 Code Stem:
@@ -140,9 +142,11 @@ StarsAndStripes
 ********************
 --------------------
 ```
+
+<sub><sup>09/07/22</sup></sub>
 ___
 
-## [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/tree/main/ConeFrustumTSA_090922_pd6/src)
+## [ConeFrustrumTSA](https://github.com/TrooperZ/CSA_Assignments/tree/main/ConeFrustumTSA)
 Objective: A frustum of a cone has the following measurement: (1) R = big radius (2) z = angle of elevation of  lateral side (3) h = height  [The small radius is not measured.]
 
 Create a class ConeFrustum with those variables above as instance variables.
@@ -155,6 +159,11 @@ Create a class ConeFrustumRunner.
 3) Must print the value of the total surface area of the given object. (instance).
 NOTE: Java uses radian for angle measure.
 Every math function you know is in the class Math. 
+
+<sub><sup>09/09/22</sup></sub>
+
+___
+
 
 ## [Alligator](https://github.com/TrooperZ/CSA_Assignments/tree/main/Alligator_102122_pd6/src)
 Objective: Create a class given certain requirements (requirements currently unknown)
