@@ -23,6 +23,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [MouseEvent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mouseevent)
 - [Multiples10](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#multiples10)
 - [GuessingGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#guessinggame)
+- [xTable](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#xtable)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -465,4 +466,26 @@ Do you want to play again? n
 
 <sub><sup>10/13/22</sup></sub>
 ___
+
+## [xTable](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/xTable)
+Objective: Given 2 1D arrays, write a method (xTable) that prints a multiplication table of the elements of the two arrays.
+```
+int[] a = {4,5,6,7,8,9};
+int[] b = {10,20,30,40};
+xTable(a,b);
+```
+Expected Output:
+```
+40    80      120    160    
+50    100    150    200    
+60    120    180    240    
+70    140    210    280    
+80    160    240    320    
+90    180    270    360    
+```
+
+<sub><sup>10/15/22</sup></sub>
+___
+
+
 
