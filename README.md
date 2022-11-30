@@ -27,6 +27,8 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [BoxWord](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#boxword)
 - [TriWord](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#triword)
 - [CharNum](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#charnum)
+- [Alligator](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#alligator)
+- [Cards](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cards)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -343,7 +345,7 @@ ___
 ## [LeapYear](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/LeapYear)
 Objective: Write a program to determine if a year is a leap year.  For this program, a leap year is any year evenly divisible by 4.  You will need to use mod %.
 
-<img src="https://github.com/TrooperZ/CSA_Assignments/blob/main/Lab_Assignments/Cycle2/LeapYear_100322_pd6/LeapYearFlowchart.jpeg" width="250">
+<img src="https://github.com/TrooperZ/CSA_Assignments/blob/main/Lab_Assignments/Cycle2/LeapYear/LeapYearFlowchart.jpeg" width="250">
 
 Sample Data: 
 ```
@@ -661,4 +663,104 @@ ZZZZZZZZ
 
 <sub><sup>10/21/22</sup></sub>
 ___
+
+
+## [Alligator](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/Alligator)
+Objective: Fill in each blank with the proper Java code.
+
+Code Shell:
+```
+class Alligator
+{
+private int length;
+private double hunger;
+public Alligator()
+{
+}
+public Alligator(int len, double hun)
+{
+}
+//returns true if hunger > 50
+//returns false if hunger <= 50
+public boolean isHungry()
+{
+}
+public String toString()
+{
+}
+}
+```
+
+Runner:
+```
+Alligator gator = new Alligator();
+Alligator gatuh = new Alligator(3,76);
+Alligator mean = new Alligator(55,24);
+out.println("gator = " + gator);
+out.println("gator hungry = " +  gator.isHungry());
+out.println("gatuh = " + gatuh);
+out.println("gatuh hungry = " +  gatuh.isHungry());
+out.println("mean = " + mean);
+out.println("mean hungry = " +  mean.isHungry());
+```
+
+Output:
+```
+gator = 0 0.0
+gator hungry = false
+gatuh = 3 76.0
+gatuh hungry = true
+mean = 55 24.0
+mean hungry = false
+```
+
+<sub><sup>10/21/22</sup></sub>
+
+___
+
+## [Cards](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/Card)
+Objective: You need to design and create a Card class that will represent a playing card.  The Card class will have only a face and a suit.
+
+Code Shell:
+```
+public class Card
+{
+	public static final String FACES[] = {"ZERO","ACE","TWO","THREE","FOUR",
+			               "FIVE","SIX","SEVEN","EIGHT","NINE","TEN","JACK","QUEEN","KING"};
+
+	//instance variables
+		//String suit
+		//int face
+
+  	//constructors
+
+
+	// modifiers
+		//set methods
+
+
+  	//accessors
+		//get methods
+
+
+  	//toString
+
+ }
+```
+
+Sample Output:
+
+```
+SPADES
+9
+ACE of DIAMONDS
+THREE of DIAMONDS
+FOUR of CLUBS
+QUEEN of SPADES
+QUEEN of HEARTS
+```
+
+<sub><sup>10/28/22</sup></sub>
+___
+
 
