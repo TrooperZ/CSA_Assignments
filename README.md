@@ -26,6 +26,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [xTable](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#xtable)
 - [BoxWord](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#boxword)
 - [TriWord](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#triword)
+- [CharNum](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#charnum)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -567,3 +568,97 @@ ICSPMOCSULPAPLUSCOMPSCI
 ```
 
 <sub><sup>10/19/22</sup></sub>
+
+___
+
+## [CharNum](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/CharNum)
+Objective:  Used nested loops to print out a letter pattern as shown below.  Wrap around the letters from Z to A.
+
+Sample Data:
+```
+C 4
+
+A 5
+
+B 7
+
+X 6
+
+Z 8
+```
+
+Sample Output:
+```
+CCCC DDD EE F
+
+CCCC DDD EE
+
+CCCC DDD
+
+CCCC
+
+ 
+
+AAAAA BBBB CCC DD E
+
+AAAAA BBBB CCC DD
+
+AAAAA BBBB CCC
+
+AAAAA BBBB
+
+AAAAA
+
+ 
+
+BBBBBBB CCCCCC DDDDD EEEE FFF GG H
+
+BBBBBBB CCCCCC DDDDD EEEE FFF GG
+
+BBBBBBB CCCCCC DDDDD EEEE FFF
+
+BBBBBBB CCCCCC DDDDD EEEE
+
+BBBBBBB CCCCCC DDDDD
+
+BBBBBBB CCCCCC
+
+BBBBBBB
+
+ 
+
+XXXXXX YYYYY ZZZZ AAA BB C
+
+XXXXXX YYYYY ZZZZ AAA BB
+
+XXXXXX YYYYY ZZZZ AAA
+
+XXXXXX YYYYY ZZZZ
+
+XXXXXX YYYYY
+
+XXXXXX
+
+ 
+
+ZZZZZZZZ AAAAAAA BBBBBB CCCCC DDDD EEE FF G
+
+ZZZZZZZZ AAAAAAA BBBBBB CCCCC DDDD EEE FF
+
+ZZZZZZZZ AAAAAAA BBBBBB CCCCC DDDD EEE
+
+ZZZZZZZZ AAAAAAA BBBBBB CCCCC DDDD
+
+ZZZZZZZZ AAAAAAA BBBBBB CCCCC
+
+ZZZZZZZZ AAAAAAA BBBBBB
+
+ZZZZZZZZ AAAAAAA
+
+ZZZZZZZZ
+```
+
+
+<sub><sup>10/21/22</sup></sub>
+___
+
