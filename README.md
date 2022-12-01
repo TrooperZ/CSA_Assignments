@@ -30,6 +30,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Alligator](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#alligator)
 - [Cards](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cards)
 - [VideoGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#videogame)
+- [Line](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#line)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -855,4 +856,37 @@ Create at least 3 objects with different level achievements that demonstrate all
 
 <sub><sup>10/31/22</sup></sub>
 
+___
+
+## [Line](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/Line)
+Objective: 
+
+> This assignment was closed and hidden before I made this github entry. Full data may not be provided but this will be as close as possible.
+
+We had to make a Line and Point class.
+
+Point:
+- Constructor (Takes in existing point or 2 doubles x and y)
+- Setter (Sets new point via new doubles or new point object)
+- Getter (Gets x and y)
+- Gets quadrant, axis, or origin
+- Manipulates by reflecting across x and y axis and inverse (seperate functions)
+- Calculates distance to other point
+- Moves vertically or horizontally
+- ToString
+
+Line:
+- Constructor (Takes in existing line, 2 points, or 4 doubles (2 x, 2 y))
+- Setter (Sets new point via new doubles or new points, or new line object)
+- Getter (Gets point a and point b)
+- Calculate slope
+- Calculate length
+- Calculate midpoint
+- Calculate rate of change (inc, dec, 0, NAN)
+- Calculate x and y intercepts
+- Calculate if point is on line
+- Calculate if line is paralell or perpendicular
+- ToString
+
+<sub><sup>11/02/22</sup></sub>
 ___
