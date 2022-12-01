@@ -15,6 +15,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Temperature](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#temperature)
 - [DayOfWeek](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#dayofweek)
 - [Tweet](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#tweet)
+- [RPS](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#rps)
 - [HexToBinary](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#hextobinary)
 - [DrawIt](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#drawit)
 
@@ -292,6 +293,58 @@ msg: “CVHS has 75 retweets and 51 likes.”
 ```
 
 <sub><sup>09/20/22</sup></sub>
+___
+
+## [RPS](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/RPS)
+Objective: Generate a random choice for the computer player.  Next, the person player will make a choice.  Finally, you take the two choices and see which one of the players is the winner.  You will need to use `Math.random()`.
+
+
+Sample Output : 
+```
+Rock-Paper-Scissors - pick your weapon[R,P,S]:: R
+player had R
+computer had P
+!Computer wins <<Paper Covers Rock>>!
+
+Do you want to play again? y
+
+Rock-Paper-Scissors - pick your weapon[R,P,S]:: R
+player had R
+computer had P
+!Computer wins <<Paper Covers Rock>>!
+
+Do you want to play again? y
+
+Rock-Paper-Scissors - pick your weapon[R,P,S]:: R
+player had R
+computer had S
+!Player wins <<Rock Breaks Scissors>>!
+
+Do you want to play again? y
+
+Rock-Paper-Scissors - pick your weapon[R,P,S]:: R
+player had R
+computer had R
+!Draw Game!
+
+Do you want to play again? y
+
+Rock-Paper-Scissors - pick your weapon[R,P,S]:: R
+player had R
+computer had S
+!Player wins <<Rock Breaks Scissors>>!
+
+Do you want to play again? y
+
+Rock-Paper-Scissors - pick your weapon[R,P,S]:: P
+player had P
+computer had S
+!Computer wins <<Scissors Cuts Paper>>!
+
+Do you want to play again? n
+```
+
+<sub><sup>09/28/22</sup></sub>
 ___
 
 ## [HexToBinary](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/HexToBinary)
