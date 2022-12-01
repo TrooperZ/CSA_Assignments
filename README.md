@@ -844,8 +844,7 @@ The score for the game is computed according to the following rules.
 
 The following table shows some examples of game score calculations.
 
-<img src="https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/videoGame/img1.png" height="300" />
-
+<img src="https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/videoGame/img1.png" width="300" />
 
 ##### (b)  Implement the `playManyTimes` method,  which  simulates  the  play  of num games  and  returns  the highest game score earned.  For example, if the four plays of the game that are simulated as a result of the method  call `playManyTimes(4)` earn  scores  of 75, 50, 90, and 20, then  the  method should  return 90.
 
