@@ -947,9 +947,7 @@ Line:
 ___
 
 ## [Prime](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/Prime)
-Objective: Create a new project "Prime_name_mmddyy_pdN"
-
-Create a class Prime (without main) that will determine if any provided number is prime.   Use this class to tell a number in the data file whether it is prime or not.  A prime number is any number that is only divisible by 1 and itself.
+Objective: Create a class Prime (without main) that will determine if any provided number is prime.   Use this class to tell a number in the data file whether it is prime or not.  A prime number is any number that is only divisible by 1 and itself.
 
 Create a class PrimesRunner with main, where you need to test the class Prime.
 
