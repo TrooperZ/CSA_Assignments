@@ -32,6 +32,9 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Cards](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cards)
 - [VideoGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#videogame)
 - [Line](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#line)
+- [Prime](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#prime)
+
+### [Cycle 3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-3-assignments) (11/07/22 - 12/21/22):
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -941,4 +944,111 @@ Line:
 - ToString
 
 <sub><sup>11/02/22</sup></sub>
+___
+
+## [Prime](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/Prime)
+Objective: Create a new project "Prime_name_mmddyy_pdN"
+
+Create a class Prime (without main) that will determine if any provided number is prime.   Use this class to tell a number in the data file whether it is prime or not.  A prime number is any number that is only divisible by 1 and itself.
+
+Create a class PrimesRunner with main, where you need to test the class Prime.
+
+Code Shell
+```
+public class Prime
+{
+    private int number;
+
+    //constructor methods go here  
+
+    public void setPrime(int num)
+    {
+
+    }
+
+    //boolean isPrime() goes here
+
+
+    public String toString()
+    {     
+        return "";
+    }
+}// end of Prime
+```
+Runner:
+```
+public class PrimesRunner
+{
+    public static void main( String args[] )
+    {
+
+            //must read the data from the downloaded file "primes.dat"
+            // Must use class Prime to check if a number is prime or not.
+    }
+}// end of PrimesRunnes
+```
+
+Primes.dat
+```
+18
+1201
+77
+1213
+88
+1217
+99
+121
+1431
+1223
+141
+234
+97
+436
+47
+7
+547
+2456
+34
+```
+
+Output:
+```
+1201 IS PRIME.
+
+77 IS NOT PRIME.
+
+1213 IS PRIME.
+
+88 IS NOT PRIME.
+
+1217 IS PRIME.
+
+99 IS NOT PRIME.
+
+121 IS NOT PRIME.
+
+1431 IS NOT PRIME.
+
+1223 IS PRIME.
+
+141 IS NOT PRIME.
+
+234 IS NOT PRIME.
+
+97 IS PRIME.
+
+436 IS NOT PRIME.
+
+47 IS PRIME.
+
+7 IS PRIME.
+
+547 IS PRIME.
+
+2456 IS NOT PRIME.
+
+34 IS NOT PRIME.
+```
+
+<sub><sup>11/04/22</sup></sub>
 ___
