@@ -29,6 +29,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [CharNum](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#charnum)
 - [Alligator](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#alligator)
 - [Cards](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cards)
+- [VideoGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#videogame)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -763,12 +764,14 @@ QUEEN of HEARTS
 <sub><sup>10/28/22</sup></sub>
 ___
 
-### 
+## [VideoGame](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/videoGame)
 Objective: Write and implement the necessary instance variables, constructors, and methods that are not shown.
    
 
 This involves a simulation of the play and scoring of a single-player video game.  In the game, a player attempts to complete three  levels.  A level in the  game  is  represented  by  the Level class.
 
+Code Shell:
+```
 public class Level {
 
 /** Returns true if the player reached the goal on this level and returns false otherwise */
@@ -820,12 +823,12 @@ public int playManyTimes(int num)
 { /* implement this in your code */ }
 
 } //end of class Game
-
+```
  
 
 Description of some methods:
 
-##### (a) Implement the getScore method,  which  returns  the  score  for  the  most recently  played. Each  game consists of three levels.  The score for the game is computed using the following helper methods.
+##### (a) Implement the `getScore` method,  which  returns  the  score  for  the  most recently  played. Each  game consists of three levels.  The score for the game is computed using the following helper methods.
 
 - The `isBonus method` of  the Game class  returns true if  this  is  a  bonus  game and  returns false
 - The `goalReached method `of  the Level class  returns true if  the  goal  has been  reached  on  a  particular  level  and  returns false
@@ -840,13 +843,16 @@ The score for the game is computed according to the following rules.
 
 The following table shows some examples of game score calculations.
 
-<img src="" height="300" />
+<img src="https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle2/videoGame/img1.png" height="300" />
 
 
-(b)  Implement the playManyTimes method,  which  simulates  the  play  of num games  and  returns  the highest game score earned.  For example, if the four plays of the game that are simulated as a result of the method  call playManyTimes(4) earn  scores  of 75, 50, 90, and 20, then  the  method should  return 90.
+##### (b)  Implement the `playManyTimes` method,  which  simulates  the  play  of num games  and  returns  the highest game score earned.  For example, if the four plays of the game that are simulated as a result of the method  call `playManyTimes(4)` earn  scores  of 75, 50, 90, and 20, then  the  method should  return 90.
 
-Play  of  the  game  is  simulated  by  calling  the  helper  method play. Note  that  if play is  called  only one  time  followed  by  multiple  consecutive  calls  to getScore, each  call  to getScore will  return the score earned in the single simulated play of the game.
+Play  of  the  game  is  simulated  by  calling  the  helper  method `play`. Note  that  if `play` is  called  only one  time  followed  by  multiple  consecutive  calls  to `getScore`, each  call  to `getScore` will  return the score earned in the single simulated play of the game.
 
 GameRunner:
 Create at least 3 objects with different level achievements that demonstrate all methods of Game class.
 
+<sub><sup>10/31/22</sup></sub>
+
+___
