@@ -36,7 +36,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 ### [Cycle 3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-3-assignments) (11/07/22 - 12/21/22):
 - [FoodCompareThis](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#foodcomparethis)
-- Other stuff...
+- [MostFrequent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mostfrequent)
 - [ListDown](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#listdown)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
@@ -1106,6 +1106,48 @@ Your test should include printing the output like shown below (for the 3 calls d
 "Steak: $19.75"  is greater than "steak: $18.25"
 ```
 <sub><sup>11/08/22</sup></sub>
+
+___
+
+## [MostFrequent](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/MostFrequent)
+Objective: Write a program that will go through an array to see which value occurs the most.  If 
+several values occur the same amount, return the first occurrence found with that amount.
+
+
+Sample Data
+```
+[-99,1,2,3,4,5,6,6,6,6,6,7,8,9,10,12345,5,5,5,5]
+[10,9,8,7,6,5,4,3,2,1,-99]
+[10,20,30,40,50,10,10,40,30,20,10]
+[32767]
+[255,255]
+[9,10,-88,100,-555,1000]
+[10,10,10,11,456,10,10,2,2,2,2,2,2,2]
+[-111,1,2,3,9,11,20,30]
+[9,8,7,6,5,4,3,2,0,-2,-989]
+[12,12,15,18,21,23,1000]
+[250,19,17,15,13,13,13,13,11,10,9,6,3,2,1,1]
+[9,10,-8,10000,-5000,1000]
+```
+
+Sample Output
+```
+5
+10
+10
+32767
+255
+9
+2
+-111
+9
+12
+13
+9
+```
+
+<sub><sup>11/09/22</sup></sub>
+
 ___
 
 ## [ListDown](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/ListDown)
