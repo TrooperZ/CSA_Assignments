@@ -13,6 +13,9 @@ public class ListDown
     //are in decreasing order [31,12,6,2,1]
     public static boolean go( List<Integer> numArray)
     {
+        if (numArray.stream().distinct().count() <= 1 && numArray.size() != 1) {
+            return false;
+        }
         List<Integer> newarr = new ArrayList<Integer>(numArray);
         Collections.sort(newarr, Collections.reverseOrder());
         return newarr.equals(numArray);
