@@ -35,6 +35,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Prime](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#prime)
 
 ### [Cycle 3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-3-assignments) (11/07/22 - 12/21/22):
+- [FoodCompareThis](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#foodcomparethis)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -1049,4 +1050,58 @@ Output:
 ```
 
 <sub><sup>11/04/22</sup></sub>
+___
+
+# [Cycle 3 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3)
+
+## [FoodCompareThis](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/food)
+Objective: Suppose you have a pre-existing class Food that represents items of food that can be eaten at a restaurant. The class has the following data and behavior:
+
+```
+Name						Description
+private String kind			kind of food such as "hamburger"
+private double price			price of this food item, such as 1.99
+public Food(String kind, double price)	makes a food item of the given kind and price
+public String getKind()			returns the kind of food
+public double getPrice()		returns the food item's price
+public String toString()		returns a String such as "hamburger: $1.99"
+```
+
+Your task is to modify the class to be Comparable by adding an appropriate compareTo method. Food items are ordered by the kind of food, case-insensitively. In other words, a food item of kind "Hamburger" comes before "pizza" which comes before "STEAK". If there are two food items of the same kind, they are compared by price, with less expensive food items considered "less than" more expensive ones. If two food items are of the same kind and have the same price, they are considered to be "equal." Your method should not modify the food item's state. You may assume the parameter passed is not null.
+
+
+Create a class "Food" without main.
+
+Create a class "FoodRunner" with main(), where you will test your code by fetching at least 10 Food objects stored in a file "food.dat".
+
+Your "food.dat" must be like the example below (for 10 or more Food objects, 2 of which must contain the same information (kind and price) but the kinds should differ by at least one letter case (see hotdog). 
+
+```
+     10
+     Hotdog  2.15
+     Steak  19.75
+     hotdog  2.15
+     apple  0.75
+     steak  18.25
+     hotSoup 1.75
+   (rest not shown)
+```
+
+You must fetch and store the Food objects in a 1D array (created with the number elements shown at the beginning of food.dat). Study how you can adapt the PetRunner from previous demo.
+You must  compare each Food element in the array with the rest. No repeated comparison is allowed!
+
+Illustration of comparison: Let array myFood contain the food data from food.dat file. The following is exhibited inside a loop .
+```
+myFood[0].compareThis(myFood[5])  should return "less than". //because d  (or D) has lower ascii code than s (or S).
+myFood[0].compareThis(myFood[2])  should return "equal".
+myFood[1].compareThis(myFood[4])  should return "greater than".  //because of the price
+```
+Your test should include printing the output like shown below (for the 3 calls done above).
+
+```
+"Hotdog: $2.15"  is less than "hotSoup: $1.75"
+"Hotdog: $2.15"  is equal to "hotdog: $2.15"
+"Steak: $19.75"  is greater than "steak: $18.25"
+```
+<sub><sup>11/08/22</sup></sub>
 ___
