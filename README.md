@@ -36,6 +36,8 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 ### [Cycle 3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-3-assignments) (11/07/22 - 12/21/22):
 - [FoodCompareThis](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#foodcomparethis)
+- Other stuff...
+- [ListDown](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#listdown)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
@@ -1105,3 +1107,44 @@ Your test should include printing the output like shown below (for the 3 calls d
 ```
 <sub><sup>11/08/22</sup></sub>
 ___
+
+## [ListDown](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/ListDown)
+Objective: Write a program that will go through a list to see if the numbers are decreasing.  You must combine variables, ifs, and a loop to create a working method.  There will always be at least one item in the list.  Each prior number has to be greater than the following number for the list to be considered going down.
+
+
+
+Sample Data
+```
+[-99,1,2,3,4,5,6,7,8,9,10,12345]
+[10,9,8,7,6,5,4,3,2,1,-99]
+[10,20,30,40,50,-11818,40,30,20,10]
+[32767]
+[255,255]
+[9,10,-88,100,-555,1000]
+[10,10,10,11,456]
+[-111,1,2,3,9,11,20,30]
+[9,8,7,6,5,4,3,2,0,-2,-989]
+[12,15,18,21,23,1000]
+[250,19,17,15,13,11,10,9,6,3,2,1,-455]
+[9,10,-8,10000,-5000,1000]
+```
+
+
+	
+Sample Output
+```
+false
+true
+false
+true
+false
+false
+false
+false
+true
+false
+true
+false
+```
+
+<sub><sup>12/05/22</sup></sub>
