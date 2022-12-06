@@ -2,8 +2,6 @@
 All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 
-> Any new assignments will be directly posted in the root directory (this directory). They will be migrated to their appropriate folder once 1 day passes.
-
 <details><summary>
 	
 ### [Cycle 1](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-1-assignments) (08/22/22 - 09/30/22): 
