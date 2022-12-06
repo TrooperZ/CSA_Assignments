@@ -37,6 +37,8 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 ### [Cycle 3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-3-assignments) (11/07/22 - 12/21/22):
 - [FoodCompareThis](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#foodcomparethis)
 - [MostFrequent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mostfrequent)
+- [Shift](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#shift)
+- [HorseBarn](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#horsebarn)
 - [ListDown](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#listdown)
 
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
@@ -1147,7 +1149,79 @@ Sample Output
 ```
 
 <sub><sup>11/09/22</sup></sub>
+___
 
+## [Shift](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/NumShift)
+Objective:To arrange elements in an array (sort of)
+Description:  Create a random array of numbers from 1 – 10.  Then, move all of the 7s to the front of the array.  The order of the other numbers is not important if all numbers follow the group of Lucky 7s.  Looking at the code for insertion sort and selection sort might be very helpful for this assignment. However, DO NOT SORT! 
+
+For instance, if you are given the list ::   `4 5 6 7 1 2 3 7`
+
+The list could become – all 7s must be first :: `7 7 6 4 1 2 3 5`.  
+
+NOTE: An array variable is like a reference type. When passed as argument, the parameter in the method contains the same reference (where the actual values are stored). Changing the parameter also changes the argument.
+
+
+Code Stem:
+```
+public class NumberShifterRunner
+{
+    public static void main( String args[] ) 
+    {
+        int[] ray = NumberShifter.makeLucky7Array(20);
+        System.out.println( Arrays.toString( ray ) );            
+        NumberShifter.shift7( ray );                              // the ray as argument in this method call
+        System.out.println( Arrays.toString( ray ) );             // Why has the ray changed? See the NOTE above.
+    }
+}
+
+public class NumberShifter
+{
+    public static int[] makeLucky7Array( int size)
+    {
+        return null;
+    }
+    public static void shift7(int[] arr).  //The parameter arr contains the same reference as the passing argument ray. 
+    {
+
+
+    }
+}
+
+```
+
+ 
+
+Sample Data : Random #s
+
+Sample Output :
+```
+
+[1, 10, 9, 2, 8, 2, 5, 6, 10, 7, 9, 8, 6, 7, 2, 7, 6, 10, 5, 3]
+
+[7, 7, 7, 2, 8, 2, 5, 6, 10, 1, 9, 8, 6, 10, 2, 9, 6, 10, 5, 3]
+
+ 
+
+[2, 2, 2, 6, 2, 2, 4, 5, 3, 6, 10, 7, 5, 1, 9, 10, 7, 2, 2, 7]
+
+[7, 7, 7, 6, 2, 2, 4, 5, 3, 6, 10, 2, 5, 1, 9, 10, 2, 2, 2, 2]
+
+ 
+
+[5, 9, 9, 5, 10, 5, 7, 5, 6, 7, 10, 8, 9, 9, 5, 4, 6, 6, 3, 3]
+
+[7, 7, 9, 5, 10, 5, 5, 5, 6, 9, 10, 8, 9, 9, 5, 4, 6, 6, 3, 3]
+```
+<sub><sup>11/11/22</sup></sub>
+
+___
+
+## [HorseBarn](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/HorseBarn)
+Objective: Question #3 on AP CSA 2012 exam. [View PDF of task](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/HorseBarn/ap_frq_computerscience_12.pdf)
+
+
+<sub><sup>11/14/22</sup></sub>
 ___
 
 ## [ListDown](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/ListDown)
@@ -1190,3 +1264,4 @@ false
 ```
 
 <sub><sup>12/05/22</sup></sub>
+
