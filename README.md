@@ -57,6 +57,9 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [MostFrequent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mostfrequent)
 - [Shift](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#shift)
 - [HorseBarn](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#horsebarn)
+- [Fibonacci](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#fibonacci)
+- [GroupCount](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#groupcount)
+- [GradeBook0](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#gradebook0)
 - [ListDown](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#listdown)
 
 </details>
@@ -1242,6 +1245,181 @@ Objective: Question #3 on AP CSA 2012 exam. [View PDF of task](https://github.co
 
 
 <sub><sup>11/14/22</sup></sub>
+___
+
+## [Fibonacci](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/Fibonacci)
+Objective: Generate a Fibonacci sequence.   Each number in the Fibonacci sequence is the 
+sum of the two preceding numbers in the sequence.  The first two numbers in the sequence are both 1.  The 
+third number is 2 , the fourth number is 3, the fifth number is 5, and the sixth number is 8.  The program should 
+be able to return a specified number in the fibo sequence.  If a number is specified that is out of range, a -1 
+should be returned.
+
+Sample Data :
+```
+set size to 50
+1
+2
+3
+4
+5
+6
+11
+16
+21
+31
+41
+46
+set size to 1
+1
+set size to 2
+1
+2
+11
+```
+
+Sample Output :
+```
+1
+1
+2
+3
+5
+8
+89
+987
+10946
+1346269
+165580141
+1836311903
+1
+1
+1
+-1
+```
+<sub><sup>11/16/22</sup></sub>
+___
+
+## [GroupCount](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/GroupCount)
+Objective: Given an array, determine how many groups of a specified size exist.
+
+For the array  `[1,1,1,2,2,2,3,3,3,4,5,6,7]` , there are 7 groups with at least one, 3 groups with at least 2, and 3 groups with at least 3.  A group is a series of same values.   `1 1 1`  is a group of 3, but it also is a group of 1 and 2.  To count as a group, all values must be the same.  `1 1 1` is a group of 3 because there are 3 1s in a row.
+
+ 
+
+SAMPLE DATA:
+```
+3 3 3 3 3 9 4 4 4 5 5 5 5 6 6 7 7 7 8 8 8 8 8 8 8 8        
+
+1 2 3 4 5 6 7 8 9
+
+1 1 1 2 1 1 3 3 3 3 3 3 3 3 3 3 4 4 4 5 4 4 4 6
+```
+ 
+
+SAMPLE OUTPUT:
+```
+
+[3, 3, 3, 3, 3, 9, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8]
+
+size 1 count == 7
+
+size 2 count == 6
+
+size 3 count == 5
+
+size 4 count == 3
+
+size 5 count == 2
+
+size 6 count == 1
+
+ 
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+size 1 count == 9
+
+size 2 count == 0
+
+size 3 count == 0
+
+size 4 count == 0
+
+ 
+
+[1, 1, 1, 2, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5, 4, 4, 4, 6]
+
+size 1 count == 8
+
+size 2 count == 5
+
+size 6 count == 1
+
+size 8 count == 1
+
+```
+
+Tip: chop up the string with a scanner
+```
+Scanner c = new Scanner( "2 3 3 4" );
+
+while( c.hasNextInt() )
+
+{
+
+  System.out.println( c.nextInt() );
+
+}
+```
+<sub><sup>11/16/22</sup></sub>
+___
+
+## [GradeBook0](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/GradeBook0)
+Objective: You will create a Grade class to store a single grade.  The Grade class will have one 
+constructor, a getNumericGrade method, a getLetterGrade method, and a toString.
+The getNumericGrade method will return the numeric value of the Grade.
+The getLetterGrade method will return the letter grade value of the Grade.
+For the getLetterGrade method, A is 90 and up, B is 80 to 89, C is 70 to 79, D is 60 to 69, and F is 59 and below.
+
+Class Grade:
+```
+public class Grade
+{
+  private double value;
+  public Grade( double v )
+  {
+  }
+  
+  public double getNumericGrade()
+  {
+  return 0;
+  }
+  
+  public String getLetterGrade()
+  {
+  return "";
+  }
+  public String toString()
+  {
+  return "";
+  }
+}
+```
+
+Sample Input(GradeRunner.java) :
+```
+75.3
+33
+97.1
+```
+
+Sample Output : 
+```
+75.3 C
+33.0 F
+97.1 A
+```
+<sub><sup>11/18/22</sup></sub>
 ___
 
 ## [ListDown](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/ListDown)
