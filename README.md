@@ -2,10 +2,14 @@
 All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 
-> This github repo is under reorganization. Any new assignments will be posted under `the Lab_Assignments` folder, but older ones will be placed in their respective cycle folder and their assignment description will be posted on this README file. Once all older files have been caught up, the new assignments will follow the schema.  For quick access, click the assignment links below.
+> Any new assignments will be directly posted in the root directory (this directory). They will be migrated to their appropriate folder once 1 day passes.
 
-
-### [Cycle 1](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-1-assignments) (08/22/22 - 09/30/22):
+<details><summary>
+	
+### [Cycle 1](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-1-assignments) (08/22/22 - 09/30/22): 
+	
+</summary>
+	
 - [Welcome](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#082222_1)
 - [Variables](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#variables)
 - [ClassStructure](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#classstructure)
@@ -18,8 +22,15 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [RPS](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#rps)
 - [HexToBinary](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#hextobinary)
 - [DrawIt](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#drawit)
+	
+</details>
 
+<details><summary>
+	
 ### [Cycle 2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-2-assignments) (10/03/22 - 11/11/22):
+	
+</summary>
+	
 - [LeapYear](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#leapyear)
 - [MouseEvent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mouseevent)
 - [Multiples10](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#multiples10)
@@ -34,13 +45,22 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Line](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#line)
 - [Prime](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#prime)
 
+</details>
+	
+<details open><summary>	
+	
 ### [Cycle 3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-3-assignments) (11/07/22 - 12/21/22):
+		
+</summary>
+	
 - [FoodCompareThis](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#foodcomparethis)
 - [MostFrequent](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mostfrequent)
 - [Shift](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#shift)
 - [HorseBarn](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#horsebarn)
 - [ListDown](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#listdown)
 
+</details>
+	
 # [Cycle 1 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1)
 
 ## [Welcome](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle1/Welcome)
