@@ -42,6 +42,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [VideoGame](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#videogame)
 - [Line](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#line)
 - [Prime](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#prime)
+- [ToysPart1](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#toyspart1)
 
 </details>
 	
@@ -1550,3 +1551,37 @@ out of range
 06 daisy
 ```
 <sub><sup>12/06/22</sup></sub>
+
+___
+
+## [ToysPart1](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/ToysPt1)
+
+
+Objective: 
+Create a Toy class that stores a Toy name and a count and how many of that toy exist.   Use the sample runner code below to help you create the class and define the methods.
+
+
+Sample Runner Code : 
+```
+Toy t = new Toy( "sorry" );
+System.out.println( t.getCount() );
+System.out.println( t );
+System.out.println( t.getName() );
+
+Toy s = new Toy( "ji goe" );
+System.out.println(s.getCount() );
+s.setCount( 5 );
+System.out.println(s.getCount() );
+System.out.println( s );
+```
+
+Sample Output : `
+```
+1
+sorry 1
+sorry
+1
+5		
+ji goe 5
+```
+<sub><sup>12/07/22</sup></sub>
