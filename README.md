@@ -43,6 +43,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Line](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#line)
 - [Prime](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#prime)
 
+
 </details>
 	
 <details open><summary>	
@@ -60,6 +61,8 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [GradeBook0](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#gradebook0)
 - [ListDown](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#listdown)
 - [FlowerGarden](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#flowergarden)
+- [ToysPart1](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#toyspart1)
+- [ToysPart2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#toyspart2)
 
 </details>
 	
@@ -1550,3 +1553,70 @@ out of range
 06 daisy
 ```
 <sub><sup>12/06/22</sup></sub>
+
+___
+
+## [ToysPart1](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/ToysPt1)
+
+
+Objective: 
+Create a Toy class that stores a Toy name and a count and how many of that toy exist.   Use the sample runner code below to help you create the class and define the methods.
+
+
+Sample Runner Code : 
+```
+Toy t = new Toy( "sorry" );
+System.out.println( t.getCount() );
+System.out.println( t );
+System.out.println( t.getName() );
+
+Toy s = new Toy( "ji goe" );
+System.out.println(s.getCount() );
+s.setCount( 5 );
+System.out.println(s.getCount() );
+System.out.println( s );
+```
+
+Sample Output : `
+```
+1
+sorry 1
+sorry
+1
+5		
+ji goe 5
+```
+<sub><sup>12/07/22</sup></sub>
+
+___
+
+## [ToysPart2](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle3/ToysPt2)
+
+
+Objective: 
+
+Create a program that will store a list of Toys and keep track of how many times a 
+particular toy occurs.
+
+BONUS CHALLENGE  -   Write a method to return the Toy that occurs in the list most frequent and another 
+method to sort the toys by count.
+
+Sample Runner Code :
+```
+ToyStore sto = new ToyStore();
+System.out.println( sto );
+String[] s;
+s = "sorry bat sorry sorry sorry train train teddy teddy ball ball".split(" ");                 
+sto.loadToys( s );
+System.out.println( sto );
+System.out.println( "max == " + sto.getMostFrequentToy() );
+System.out.println( sto.getThatToy( "sorry" ) );
+```
+Sample Output :
+```
+[]
+[sorry 4, bat 1, train 2, teddy 2, ball 2]
+max == sorry
+sorry 4
+```
+<sub><sup>12/07/22</sup></sub>
