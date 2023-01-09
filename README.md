@@ -69,6 +69,10 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 <details open><summary>	
 	
 ### [Cycle 4](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-4-assignments) (01/09/23 - 02/24/23):
+
+- [ContactList](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#contactlist)
+- [GradeReport](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#gradereport)
+- [Journey](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#journey)
 		
 </summary>
 	
@@ -1629,3 +1633,99 @@ max == sorry
 sorry 4
 ```
 <sub><sup>12/07/22</sup></sub>
+____
+
+# [Cycle 4 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4)
+
+## [ContactList](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/ContactList)
+
+
+Objective: We have defined a small Contact object with name and number properties. In this exercise, you are going to practice working with those Contact objects in a LinkedList.
+
+Take the following steps to complete this activity
+
+In the code below you will find the Contact class with a main() method. The method should create a new LinkedList of Contact objects, add 5 of those objects to the list, and then display the objects in the list. There are some missing pieces marked by ????. Can you fill in those pieces to make the program work correctly?
+
+- The main() function should create a LinkedList of Contact objects named contactList.
+- 5 new Contact objects should be added to the linked list with the add() function.
+- The first and last item should be retrieved from the list and printed on the screen.
+- All of the objects in the list should be printed to the screen using a simple for() loop
+
+
+<sub><sup>01/09/23</sup></sub>
+____
+
+## [GradeReport](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/GradeReport)
+
+
+Do you know how your Grade Point Average (GPA) changes as you earn new grades? The overall average is calculated by adding together all of the grades and then dividing by the number of grades. As you add more grades, it becomes harder to make big changes to your GPA, because more grades mean each individual grade has less weight in the results.
+
+In this exercise, you are going to store several grades in an ArrayList. Then, you will write a calculateAverage() method to display the average of all the grades in the list. We'll call that method several times from the main() code.
+
+Take the following steps to complete this activity
+
+Take a look at the code shown below.
+
+The main() method should:
+- Create an ArrayList that stores only Integer objects using the "generic" form.
+- Add a numeric grade to the list
+- Call calculateAverage() to display the average
+- Add more grades to the list, calling calculateAverage() each time to see how the new grade impacts the overall result
+- The calculateAverage() method receives your ArrayList as a parameter and will perform the grade-averaging calculation.
+- Define a double sum variable and initialize it to zero.
+- Create a for() loop to iterate over each element in the list
+- Inside the loop, add each element to the sum
+- When the loop ends, calculate and display a double average based on the sum and the number of items in the list.
+- There are some missing pieces marked by ????. Can you fill in those pieces to make the program work correctly?
+
+
+<sub><sup>01/09/23</sup></sub>
+____
+
+## [GradeReport](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/GradeReport)
+
+
+Do you know how your Grade Point Average (GPA) changes as you earn new grades? The overall average is calculated by adding together all of the grades and then dividing by the number of grades. As you add more grades, it becomes harder to make big changes to your GPA, because more grades mean each individual grade has less weight in the results.
+
+In this exercise, you are going to store several grades in an ArrayList. Then, you will write a calculateAverage() method to display the average of all the grades in the list. We'll call that method several times from the main() code.
+
+Take the following steps to complete this activity
+
+Take a look at the code shown below.
+
+The main() method should:
+- Create an ArrayList that stores only Integer objects using the "generic" form.
+- Add a numeric grade to the list
+- Call calculateAverage() to display the average
+- Add more grades to the list, calling calculateAverage() each time to see how the new grade impacts the overall result
+- The calculateAverage() method receives your ArrayList as a parameter and will perform the grade-averaging calculation.
+- Define a double sum variable and initialize it to zero.
+- Create a for() loop to iterate over each element in the list
+- Inside the loop, add each element to the sum
+- When the loop ends, calculate and display a double average based on the sum and the number of items in the list.
+- There are some missing pieces marked by ????. Can you fill in those pieces to make the program work correctly?
+
+
+<sub><sup>01/09/23</sup></sub>
+____
+
+## [Journey](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Journey)
+
+In this exercise, you are going to practice using the enhanced for() loop to traverse a moderately complex data structure. Imagine a "walkabout" journey where you have visited three countries and a different number of locations within each country. We are going to store each of the locations within a country in an ArrayList<String>, and then store those ArrayList objects inside another ArrayList array representing the countries.
+
+Examine the journey declaration below. Notice that each element in the ArrayList is, itself, an ArrayList of strings.
+
+`ArrayList<ArrayList<String>> journey`
+
+Take the following steps to complete this activity
+
+In the code below, we have initialized the journey data structure with all of the locations visited within three countries. Your goal is to traverse this data structure and print out all of the locations that were visited, one country at a time.
+
+- Where marked by ???? and comments in the main() method, write your code to traverse the journey, printing out each location.
+- Use nested, enhanced for() loops to easily complete this task.
+- For the outer loop, each element in the journey is an ArrayList<String> object representing a country.
+- In the inner loop, each element in the country ArrayList is a String. Just use System.out.println() to display this value.
+
+
+<sub><sup>01/09/23</sup></sub>
+
