@@ -46,7 +46,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 </details>
 	
-<details open><summary>	
+<details><summary>	
 	
 ### [Cycle 3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-3-assignments) (11/07/22 - 12/21/22):
 		
@@ -63,6 +63,15 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [FlowerGarden](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#flowergarden)
 - [ToysPart1](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#toyspart1)
 - [ToysPart2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#toyspart2)
+
+</details>
+
+<details open><summary>	
+	
+### [Cycle 4](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-4-assignments) (01/09/23 - 02/24/23):
+		
+</summary>
+	
 
 </details>
 	
