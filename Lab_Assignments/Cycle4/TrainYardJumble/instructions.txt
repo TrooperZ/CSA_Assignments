@@ -1,0 +1,413 @@
+Chapter Nineteen: Lists and ArrayLists
+Activity: Train Yard Jumble
+Train yards are busy places. There are many types of train cars like an engine, cargo container, and a caboose (the end of the train).
+
+Busy Trainyard
+
+ 
+
+In this activity, you are going to create a simple puzzle game that challenges the player to put a jumbled set of train cars in the correct order. Your new ArrayList skills will come in handy!
+
+Program Requirements
+In this puzzle game, the player is presented with a set of 4 train cars that have been placed in a random order. There is one engine, two cargo cars, and one caboose. You will store the four jumbled cars in an ArrayList with elements 0 through 3. The player is challenged to get the cars in the correct order by swapping side-by-side pairs of cars. The correct order in a solved puzzle will start with an engine, followed by two cargo cars and a caboose at the end, as shown below.
+
+Correctly solved puzzle
+
+When the program starts, the player will be prompted to enter a puzzle number. That number is used to generate a random sequence of cars (e.g. "Caboose, Engine, Cargo, Cargo").
+
+Enter puzzle number: 1
+STARTING ORDER: Caboose Engine Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Engine Caboose Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 1
+Engine Cargo Caboose Cargo 
+Enter index (0-2) of first car in pair to switch: 2
+Engine Cargo Cargo Caboose 
+You solved the puzzle in 3 moves!
+The player then has three turns to swap a side-by-side pair of cars to try and get the cars in the right order. On each turn, the player enters the index of the left-most car in the pair to swap. The valid user entries on each turn are 0, 1, or 2. If the player enters 0, the program will swap the cars at the 0 and 1 spots in the list. If the player enters 1, the program will swap 1 and 2, and so on.
+
+Swapping side-by-side pairs
+
+After each swap, the program displays the new order of cars in the list. It will check for correct ordering of cars and declare a winner if the puzzle is solved. If the player takes 3 turns without solving, the game will end with a different message.
+
+Enter puzzle number: 1
+STARTING ORDER: Caboose Engine Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 1
+Caboose Cargo Engine Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Cargo Caboose Engine Cargo 
+Enter index (0-2) of first car in pair to switch: 1
+Cargo Engine Caboose Cargo 
+You failed to solve the puzzle
+ 
+
+Entering the same puzzle number will result in the same "random" sequence of cars. Different puzzle numbers will generate different (but consistent) random sequences. You can replay the game with the same puzzle number until you figure out a solution within 3 moves.
+
+These pseudo-random, but repeatable sequences are achieved by seeding the Random object with the puzzle number. When the Random object is initialized with the same seed value, it will always produce the same "randomized" sequence.
+
+Class Details
+Your program contains 2 classes that work together:
+
+TrainYard - This class contains the main game logic
+TrainCar - This class represents one train car within the game
+All of your work will be in TrainYard.
+
+TrainCar Class
+
+The TrainCar class is complete and does not need any modification, though you are welcome to inspect the class to see how it works. Each TrainCar has a single private property that identifies the type of car ("Engine", "Cargo" or "Caboose"). The class contains three public methods that you will call as you complete the TrainYard game logic.
+
+public TrainCar(String aType)
+Copy
+The constructor will initialize the string type of this car ("Engine", "Cargo", or "Caboose").
+
+public String getType()
+Copy
+The getType() method returns the string type of this car.
+
+public boolean isType(String aType)
+Copy
+The isType() method will compare the input type to the car's type and return true if there is a match, or false otherwise.
+
+ 
+
+TrainYard Class
+
+The TrainYard class has three final (constant) properties that you can use in your own logic. These three constants define the String values that describe each type of car ("Engine", "Cargo", and "Caboose").
+
+public class TrainYard 
+{
+	// these constant strings describe each type of car
+    private static final String ENGINE = "Engine";
+    private static final String CARGO = "Cargo";
+    private static final String CABOOSE = "Caboose";
+Copy
+The TrainYard class has 5 methods. The main() method is completed for you.
+
+public static void main(String[] args)
+Copy
+The main() logic in TrainYard will run the overall game - do not make any changes to this method. This main() logic will ask the user for the puzzle number, create the jumbled list of train cars, loop for 3 game turns, and detect if the player has solved the puzzle.
+
+You will finish the remaining 4 methods for this activity (see detailed steps below).
+
+Starting Code
+You will start with TrainYard.java and TrainCar.java source files. All of your work for this activity should go in the TrainYard class in the methods described in the instructions and marked by comments. Do not make any changes to the TrainCar source code.
+
+If you are working offline, you can copy and paste the code below into the source files that you create. But if you are working with CompuScholar's auto-graded system, you will find this code waiting for you when you click on the activity link in the course interface.
+
+TrainYard.java
+
+// Copyright CompuScholar, Inc.
+// Do not distribute or post in any public or private venue.
+
+// The student should add their logic in the required areas.
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class TrainYard 
+{
+	// these constant strings describe each type of car
+    private static final String ENGINE = "Engine";
+    private static final String CARGO = "Cargo";
+    private static final String CABOOSE = "Caboose";
+
+	// This method is provided complete in the activity starter.
+	// No student changes are needed.
+	public static void main(String[] args) 
+	{
+		// initialize user input
+		Scanner input = new Scanner(System.in);
+        
+		// get puzzle number from user and seed Random generator
+		System.out.print("Enter puzzle number: ");
+        int seed = input.nextInt();
+		Random rand = new Random(seed);
+		
+		// create and print ArrayList of jumbled cars
+		ArrayList jumbledCars = createJumbledCars(rand);
+		System.out.print("STARTING ORDER: ");
+		printCars(jumbledCars);
+	
+		boolean isSolved = false;  // flag will be set to true if puzzle is solved
+		int moves = 0;             // track number of moves
+		do
+		{
+			moves++;  // count this move
+
+			// prompt user for pair of cars to switch
+			System.out.print("Enter index (0-2) of first car in pair to switch: ");
+			int firstIndex = input.nextInt();
+
+			// switch the chosen car and the one after it
+			switchCars(jumbledCars,firstIndex);
+			
+			// print the new order of cars
+			printCars(jumbledCars);
+			
+			// check to see if puzzle is solved
+			isSolved = carsInOrder(jumbledCars);
+			
+			// continue looping until puzzle is solved or 3 moves completed
+		} while (!isSolved && (moves < 3));
+		
+		// print success or failure message
+		if (isSolved)
+		{
+			System.out.println("You solved the puzzle in " + moves + " moves!");
+		}
+		else
+		{
+			System.out.println("You failed to solve the puzzle");
+		}
+		
+		input.close();
+	}
+	
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	static private ArrayList createJumbledCars(Random rand)
+	{
+		return null; // replace this with student logic
+	}
+
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	static private void printCars(ArrayList cars)
+	{
+
+	}
+	
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	static private void switchCars(ArrayList cars, int firstIndex)
+	{
+
+	}
+	
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	static private boolean carsInOrder(ArrayList cars)
+	{
+		return false; // replace this with student logic
+	}
+}
+Copy
+ 
+
+TrainCar.java
+
+// Copyright CompuScholar, Inc.
+// Do not distribute or post in any public or private venue.
+
+// This activity starter file is provided for the student.
+// No student modification needs to be made to complete the activity.
+
+public class TrainCar 
+{
+   // string describes this type of car
+   private String myType;
+   
+   // constructor requires car type
+   public TrainCar(String aType)
+   {
+	   myType = aType;
+   }
+   
+   // return this descriptive type
+   public String getType()
+   {
+	   return myType;
+   }
+   
+   // compare input type to my type and return true if equal
+   public boolean isType(String aType)
+   {
+	   return myType.equalsIgnoreCase(aType);
+   }
+}
+Copy
+Steps to Complete this Activity
+You will complete each of the 4 empty methods in the TrainYard class. While you can complete the methods in any order, we recommend following the sequence suggested below. Test your program after each completed method to ensure there are no errors before moving on to the next step.
+
+Do not change any parameter names in the starting method declarations. Those parameter names may be used in test cases to validate your code. Unless otherwise specified, you can declare your own local variable names inside methods and use any logic needed to meet the requirements.
+Method 1 - createJumbledCars()
+
+static private ArrayList<TrainCar> createJumbledCars(Random rand)
+Copy
+The createJumbledCars() method receives a pre-initialized Random object and will use that object to create an ArrayList of TrainCar objects in random order.
+
+For this puzzle, you must have exactly 1 Engine, 2 Cargo cars, and 1 Caboose in your jumbled list. Therefore, you cannot simply generate a random type of car for each of your 4 objects. You might end up with 2 Engines, 3 Cargo cars, and no Caboose cars!
+
+Instead, you will first create one ArrayList that has exactly the cars we want, in this order:
+
+Engine
+Cargo
+Cargo
+Caboose
+Then, you will create a second ArrayList that will hold the jumbled cars. You will set up a loop that iterates 4 times. Inside the loop, you will create a random index number from 0 up to the number of cars remaining in the first list. Get the object from that element in the first list and add it to the beginning of the second list. Finally, remove the object from the first list so it cannot be randomly selected again.
+
+For example, if your original list contains cars in the order shown below, and your jumbled list is empty...
+
+Original: 0-Engine, 1-Cargo, 2-Cargo, 3-Caboose
+Jumbled : 
+...then the first time through the loop you will generate a random number between 0 and 3. Let's say your number is 2. You will remove the element (Cargo), at index 2, from the first list and add it to the second.
+
+Original: 0-Engine, 1-Cargo, 2-Caboose
+Jumbled: 0-Cargo
+Notice that your original ArrayList elements after the removed item will shift down to close the gap. Your original list now has valid indexes from 0 to 2, and your next random number in your loop must be within that smaller range! Let's say your next random number is 0. You will remove the 0th element from the first list and add it to the beginning of the second list.
+
+Original: 0-Cargo, 1-Caboose
+Jumbled: 0-Engine, 1-Cargo
+After you loop 4 times, all 4 of the cars from the first list should have been added to the second list in some random order, determined by your Random number generator.
+
+Original: 
+Jumbled: 0-Caboose, 1-Cargo, 2-Engine, 3-Cargo
+Recall that you can create a random integer between 0 and some upper bound (not including that upper bound itself) by using the nextInt() method on the Random object. For example, rand.nextInt(3) will return a random number 0, 1 or 2. You want a random index that will pull any remaining car from the first list, so your upper bound each time through the loop should be the current size of your first list!
+ 
+
+First, declare a local variable that will hold your first list and initialize that variable with a new ArrayList of TrainCar references.
+Next, add four new TrainCar objects to the first list in any order. You must add 1 engine, 2 cargo cars, and 1 caboose. You can create a new TrainCar by passing in one of the constant values ENGINE, CARGO, or CABOOSE into the TrainCar constructor. For example:
+new TrainCar(ENGINE)
+Copy
+Now, create a second local variable that will hold your second (jumbled) list and initialize that variable with a new ArrayList of TrainCar references.
+Use a for() loop to loop 4 times. Inside the loop:
+Get a random number between 0 and the current size of the first list
+Use that random number to get the TrainCar object at that element from the first list
+Add that TrainCar reference to the beginning of the second list
+Remove the TrainCar reference from the first list
+After your loop is done, you have successfully created a jumbled list of the correct types of TrainCar objects. Return that list to the calling program.
+CHECKPOINT: If you run your code at this point, it should build and run without errors. However, you will not see the order of the cars in the jumbled list, nor can the user solve the puzzle, as you haven't finished the other methods yet.
+Enter puzzle number: 1
+STARTING ORDER: Enter index (0-2) of first car in pair to switch: 0
+Enter index (0-2) of first car in pair to switch: 0
+Enter index (0-2) of first car in pair to switch: 0
+You failed to solve the puzzle
+ 
+
+Method 2 - printCars()
+
+static private void printCars(ArrayList<TrainCar> cars)
+Copy
+The printCars() method will receive an input list of cars and will simply display that list of cars in order.
+
+Use an "enhanced" for() loop to iterate over the input ArrayList.
+Inside the loop, use the reference to the current TrainCar object and call the getType() method on the object to get a string description. Display that string with System.out.print() (to keep things on the same line) and also add a blank space " " afterward.
+After the loop has displayed all of the cars in order, call System.out.println() to end the line and move to the next line.
+CHECKPOINT: If you run your code at this point, you should now see the STARTING ORDER line with a complete list of jumbled cars as shown below. You will also see the current list after each turn. Note that user input has no effect because you haven't completed the remaining methods yet.
+Enter puzzle number: 1
+STARTING ORDER: Caboose Engine Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Caboose Engine Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Caboose Engine Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Caboose Engine Cargo Cargo 
+You failed to solve the puzzle
+This is your first opportunity to verify that your "randomized" lists are built correctly. Each puzzle number must always produce the same "random" list and those lists should match our examples. Here are three examples to help you confirm that your createJumbledCars() method is working.
+
+Enter puzzle number: 1
+STARTING ORDER: Caboose Engine Cargo Cargo 
+
+Enter puzzle number: 2
+STARTING ORDER: Cargo Caboose Engine Cargo 
+
+Enter puzzle number: 3
+STARTING ORDER: Cargo Engine Caboose Cargo 
+ 
+
+Method 3 - switchCars()
+
+static private void switchCars(ArrayList<TrainCar> cars, int firstIndex)
+Copy
+The switchCars() method will simply switch two cars in the input ArrayList. The two cars to swap are located at firstIndex and firstIndex+1. The input firstIndex will always be between 0 and 2, so firstIndex+1 may range from 1 to 3.
+
+Get the TrainCar reference at the firstIndex element in cars and store the reference in one local variable.
+Get the TrainCar reference at the firstIndex+1 element in cars and store the reference in a second local variable.
+Store the first TrainCar reference in the cars list in the firstIndex+1 element
+Store the second TrainCar reference in the cars list in the firstIndex element
+CHECKPOINT: If you run your code at this point, you should see that the user can now successfully switch cars. On each turn, the displayed list should change based on the user's input. However, the game does not yet successfully detect a completed puzzle.
+Enter puzzle number: 1
+STARTING ORDER: Caboose Engine Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Engine Caboose Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 1
+Engine Cargo Caboose Cargo 
+Enter index (0-2) of first car in pair to switch: 2
+Engine Cargo Cargo Caboose 
+You failed to solve the puzzle
+ 
+
+Method 4 - carsInOrder()
+
+static private boolean carsInOrder(ArrayList<TrainCar> cars)
+Copy
+The carsInOrder() method receives the current list of cars and will return true if the train cars are in the correct order, or false otherwise. Remember, the correct order will have an Engine at the 0th element, a Cargo car at the 1st element, a Cargo car at the 2nd element, and a Caboose at the 3rd element.
+
+To check and see if a particular car is of the correct type, you can call the isType() method on the TrainCar object. Pass in the type of car you want to match. For example:
+
+TrainCar car1 = cars.get(0);
+if (!car1.isType(ENGINE))
+{
+   return false; // this car does not match the ENGINE type
+}
+Copy
+You can write any type of logic you like to successfully detect the correct order and return true or false. For example, you don't need a loop to do this; you can simply repeat the simple if() statements illustrated above for all 4 car elements. Remember that your method must return either true or false from all possible paths through your logic.
+
+CHECKPOINT: At this point, your game is done! The program should succesfully detect a completed puzzle and the main() logic will print the successful message. If a puzzle is not solved in 3 turns, the failure message will be printed.
+Enter puzzle number: 1
+STARTING ORDER: Caboose Engine Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Engine Caboose Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 1
+Engine Cargo Caboose Cargo 
+Enter index (0-2) of first car in pair to switch: 2
+Engine Cargo Cargo Caboose 
+You solved the puzzle in 3 moves!
+Activity Results
+When you are done, run your code multiple times and try a variety of puzzle numbers. Ensure your random order for each number matches our illustrations. Play the game and see if you can solve the puzzle within 3 tries. Your game should print the success message and stop as soon as the puzzle is placed in the right order. For example, it is possible to solve puzzle #4 in 2 moves.
+
+Enter puzzle number: 4
+STARTING ORDER: Engine Caboose Cargo Cargo 
+Enter index (0-2) of first car in pair to switch: 1
+Engine Cargo Caboose Cargo 
+Enter index (0-2) of first car in pair to switch: 2
+Engine Cargo Cargo Caboose 
+You solved the puzzle in 2 moves!
+Here are two more example runs.
+
+Enter puzzle number: 6
+STARTING ORDER: Cargo Caboose Engine Cargo 
+Enter index (0-2) of first car in pair to switch: 2
+Cargo Caboose Cargo Engine 
+Enter index (0-2) of first car in pair to switch: 1
+Cargo Cargo Caboose Engine 
+Enter index (0-2) of first car in pair to switch: 0
+Cargo Cargo Caboose Engine 
+You failed to solve the puzzle
+Enter puzzle number: 6
+STARTING ORDER: Cargo Caboose Engine Cargo 
+Enter index (0-2) of first car in pair to switch: 1
+Cargo Engine Caboose Cargo 
+Enter index (0-2) of first car in pair to switch: 0
+Engine Cargo Caboose Cargo 
+Enter index (0-2) of first car in pair to switch: 2
+Engine Cargo Cargo Caboose 
+You solved the puzzle in 3 moves!
+Activity Rubric
+If your project is being automatically graded by our system, your grade will be calculated from 0 to 100 as follows:
+
+Points	Description
+7	createJumbledCars() creates ArrayList of TrainCar objects
+7	createJumbledCars() creates new ENGINE TrainCar
+7	createJumbledCars() uses nextInt() to create random number
+7	printCars() uses enhanced for() loop to iterate over cars
+7	printCars() uses getType() method to get String description
+7	switchCars() gets element from cars at firstIndex
+7	switchCars() gets element from cars at firstIndex+1
+7	switchCars() sets element in cars at firstIndex
+7	switchCars() sets element in cars at firstIndex+1
+7	carsInOrder() uses isType() to check for match
+10	Verify program output for puzzle number 3
+10	Verify program output for puzzle number 4
+10	Verify program output for puzzle number 5
+ 
+
+Your program should work correctly for any puzzle number. Our test cases will not enter any invalid input (e.g. non-integer puzzle number or a swap index outside the range 0-2).
+
+End of Activity
