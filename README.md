@@ -1736,7 +1736,7 @@ ____
 
 ## [TrainYardJumble](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/TrainYardJumble)
 
-Objective:
+Objective: (CompuScholar Assignment)
 
 [View Here](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/instructions.html)
 
