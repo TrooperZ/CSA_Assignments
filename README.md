@@ -73,6 +73,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [ContactList](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#contactlist)
 - [GradeReport](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#gradereport)
 - [Journey](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#journey)
+- [Sort](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#sort)
 - [Matrix102](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#matrix102)
 		
 </summary>
@@ -1729,6 +1730,27 @@ In the code below, we have initialized the journey data structure with all of th
 
 
 <sub><sup>01/09/23</sup></sub>
+	
+____
+
+## [Sort](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Sort)
+
+Objective:
+Create a class Sort without main.
+  - has an attribute abc that is a List of String objects.
+  - has constructor that accepts List of String (from the text file) and adds all elements to abc.. Also, it appends your first name to abc.
+  - has 3 different methods (bubble, selection and insertion) of sorting abc.
+  - has accessor method for the instance variable (abc).
+	
+Create a class SortRunner with main.
+- fetches all words in SortWords and stores them in a List of String
+- prints the lements of List.
+- creates 3 instances of Sort with the List as argument
+- each Sort instance invokes a sort method (different from the other 2) then accesses the instance (abc) variable in Sort 
+- print elements (of abc).
+	
+	
+<sub><sup>01/20/23</sup></sub>
 
 ____
 
