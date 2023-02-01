@@ -45,7 +45,13 @@ public class Matrix {
         int[][] mod = new int[matrix.length][matrix[0].length];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                mod[i][j] = matrix[j][i];
+                if (i == j) {
+                    mod[i][j] = matrix[i][j];
+                }
+                else{
+                    mod[i][j] = matrix[j][i];
+                }
+
             }
         }
         matrix = mod;
