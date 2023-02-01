@@ -73,6 +73,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [ContactList](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#contactlist)
 - [GradeReport](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#gradereport)
 - [Journey](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#journey)
+- [TrainYardJumble](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#trainyardjumble)
 - [Sort](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#sort)
 - [Matrix102](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#matrix102)
 		
@@ -1730,6 +1731,18 @@ In the code below, we have initialized the journey data structure with all of th
 
 
 <sub><sup>01/09/23</sup></sub>
+	
+____
+
+## [TrainYardJumble](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/TrainYardJumble)
+
+Objective:
+
+[View Here](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/instructions.html)
+
+(Images may not load)
+
+<sub><sup>01/11/23</sup></sub>
 	
 ____
 
