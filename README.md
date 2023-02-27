@@ -1,3 +1,584 @@
+### Pong 3
+
+### Paddle
+```
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+package Pong3;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Paddle extends Block
+{
+   //instance variables
+   private int speed;
+
+   public Paddle()
+   {
+		super(10,10);
+      speed =5;
+   }
+
+   public Paddle(int x, int y)
+   {
+      super(x,y);
+      speed =5;
+   }
+
+   public Paddle(int x, int y, int speed)
+   {
+      super(x,y);
+      this.speed =speed;
+   }
+
+   public Paddle(int x, int y, int width, int height)
+   {
+      super(x,y, width, height);
+      this.speed =5;
+   }
+
+   public Paddle(int x, int y, int width, int height, int speed)
+   {
+      super(x,y, width, height);
+      this.speed =speed;
+   }
+
+   public Paddle(int x, int y, int width, int height, Color color, int speed)
+   {
+      super(x,y, width, height, color);
+      this.speed =speed;
+   }
+
+
+
+
+   //add the other Paddle constructors
+
+   public void moveUpAndDraw(Graphics window)
+   {
+      Color curColor = super.getColor();
+      super.setColor(Color.WHITE);
+      super.draw(window);
+
+
+      super.setColor(curColor);
+      setY(getY()-speed);
+      super.draw(window);
+   }
+
+   public void moveDownAndDraw(Graphics window)
+   {
+      Color curColor = super.getColor();
+      super.setColor(Color.WHITE);
+      super.draw(window);
+
+
+      super.setColor(curColor);
+      setY(getY()+speed);
+      super.draw(window);
+   }
+
+   public int getSpeed(){
+      return speed;
+   }
+
+   public void setSpeed(int speed){
+      this.speed = speed;
+   }
+
+
+   
+   
+   public String toString(){
+      return super.toString() + " " + speed;
+   }
+}
+```
+
+### Testerthingy
+
+```
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+package Pong3;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Canvas;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
+import static java.lang.Character.*;
+import java.awt.image.BufferedImage;
+import java.awt.event.ActionListener;
+
+public class PaddleTestTwo extends Canvas implements KeyListener, Runnable
+{
+	private Ball ball;
+	private Paddle leftPaddle;
+
+	private boolean[] keys;		//keeps track of what keys are pressed
+
+	public PaddleTestTwo()
+	{
+		//set up all game variables
+
+
+		ball = new Ball();
+		
+		
+		
+		leftPaddle = new Paddle(10, 300, 10, 100);
+		
+		
+		
+
+		
+		
+		
+
+
+		keys = new boolean[5];
+
+
+		//set up the Canvas
+		setBackground(Color.WHITE);
+		setVisible(true);
+
+		this.addKeyListener(this);
+		new Thread(this).start();
+	}
+	
+	public void update(Graphics window)
+	{
+		paint(window);
+	}
+
+	public void paint(Graphics window)
+	{
+		ball.moveAndDraw(window);
+		leftPaddle.draw(window);
+
+		if(!(ball.getX()>=10 && ball.getX()<=550))
+		{
+			ball.setXSpeed(-ball.getXSpeed());
+		}
+
+		if(!(ball.getY()>=10 && ball.getY()<=450))
+		{
+			ball.setYSpeed(-ball.getYSpeed());
+		}
+
+		if(keys[0] == true)
+		{
+			//move left paddle up and draw it on the window
+			leftPaddle.moveUpAndDraw(window);
+		}
+		if(keys[1] == true)
+		{
+			leftPaddle.moveDownAndDraw(window);
+
+		}
+		if(keys[2] == true)
+		{
+
+		}
+		if(keys[3] == true)
+		{
+
+		}
+	}
+
+	public void keyPressed(KeyEvent e)
+	{
+		switch(toUpperCase(e.getKeyChar()))
+		{
+			case 'W' : keys[0]=true; break;
+			case 'Z' : keys[1]=true; break;
+			case 'I' : keys[2]=true; break;
+			case 'M' : keys[3]=true; break;
+		}
+	}
+
+	public void keyReleased(KeyEvent e)
+	{
+		switch(toUpperCase(e.getKeyChar()))
+		{
+			case 'W' : keys[0]=false; break;
+			case 'Z' : keys[1]=false; break;
+			case 'I' : keys[2]=false; break;
+			case 'M' : keys[3]=false; break;
+		}
+	}
+
+	public void keyTyped(KeyEvent e)
+	{
+		//no code needed here
+	}
+	
+   public void run()
+   {
+   	try
+   	{
+   		while(true)
+   		{
+   		   Thread.currentThread().sleep(8);
+            repaint();
+         }
+      }catch(Exception e)
+      {
+      }
+  	}		
+}
+```
+
+### Pong2
+```
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+package Pong2;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Ball extends Block
+{
+	private int xSpeed;
+	private int ySpeed;
+
+	public Ball()
+	{
+		super(200,200);
+		xSpeed = 3;
+		ySpeed = 1;
+	}
+
+	public Ball(int x, int y){
+		super(x,y);
+		xSpeed = 3;
+		ySpeed = 1;
+
+	}
+
+	public Ball(int x, int y, int xSpeed, int ySpeed){
+		super(x,y);
+		this.xSpeed = xSpeed;
+		this.ySpeed = ySpeed;
+	}
+
+	public Ball(int x, int y, int xSpeed, int ySpeed, Color color){
+		super(x,y);
+		super.setColor(color);
+		this.xSpeed = xSpeed;
+		this.ySpeed = ySpeed;
+	}
+
+	public Ball(int x, int y, int w, int h, Color color, int xSpeed, int ySpeed){
+		super(x,y, w, h, color);
+		this.xSpeed = xSpeed;
+		this.ySpeed = ySpeed;
+	}
+
+	public void setXSpeed(int xSpeed){
+		this.xSpeed = xSpeed;
+
+	}
+
+	public void setYSpeed(int ySpeed){
+		this.ySpeed = ySpeed;
+	}
+
+
+   public void moveAndDraw(Graphics window)
+   {
+	   Color curColor = super.getColor();
+	   super.setColor(Color.WHITE);
+	   super.draw(window);
+
+
+	   super.setColor(curColor);
+       setX(getX()+xSpeed);
+	   setY(getY()+xSpeed);
+	   super.draw(window);
+
+   }
+   
+   public boolean equals(Ball obj)
+	{
+		return (super.equals(obj) && this.xSpeed == obj.xSpeed && this.ySpeed == obj.ySpeed);
+	}   
+
+   public int getXSpeed(){
+		return xSpeed;
+   }
+
+   public int getYSpeed(){
+		return ySpeed;
+   }
+
+   public String toString(){
+		return super.getX()+" "+super.getY() + xSpeed + " " + ySpeed + " " + super.getColor();
+   }
+}
+```
+
+### Pong1
+```
+package Pong1;//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Block
+{
+	private int xPos;
+	private int yPos;
+	private int width;
+	private int height;
+
+	private Color color;
+
+	public Block()
+	{
+		xPos = 0;
+		yPos = 0;
+		width = 10;
+		height = 10;
+		color = Color.BLACK;
+	}
+
+	public Block(int xPos, int yPos, int width, int height){
+		this.xPos = xPos;
+		this.yPos = yPos;
+		this.width = width;
+		this.height = height;
+		color = Color.BLACK;
+	}
+
+	public Block(int xPos, int yPos, int width, int height, Color color){
+		this.xPos = xPos;
+		this.yPos = yPos;
+		this.width = width;
+		this.height = height;
+		this.color = color;
+	}
+	
+	
+   public void setX(int xPos){
+		this.xPos = xPos;
+   }
+
+   public void setY(int yPos){
+		this.yPos = yPos;
+   }
+
+   public void setHeight(int height){
+		this.height = height;
+   }
+
+   public void setWidth(int width){
+		this.width = width;
+   }
+
+   public void setColor(Color col)
+   {
+		color = col;
+   }
+
+   public void draw(Graphics window)
+   {
+   	//uncomment after you write the set and get methods
+      window.setColor(color);
+      window.fillRect(getX(), getY(), getWidth(), getHeight());
+   }
+
+   public void draw(Graphics window, Color col)
+   {
+	   window.setColor(col);
+	   window.fillRect(getX(), getY(), getWidth(), getHeight());
+   }
+   
+
+
+   public int getX(){
+		return xPos;
+   }
+   public int getY(){
+		return yPos;
+   }
+   public int getWidth(){
+		return width;
+   }
+   public int getHeight(){
+		return height;
+   }
+   public Color getColor(){
+		return color;
+   }
+
+	public boolean equals(Block obj)
+
+	{
+		return (this.xPos == obj.getX() && this.yPos == obj.getY() && this.width == obj.getWidth() && this.height == obj.getHeight() && this.color.equals(obj.getColor()));}
+
+   public String toString(){
+		return xPos + " " + yPos + " " + width + " " + height + " " + color;
+   }
+    
+
+   //add a toString() method  - x , y , width, height, color
+}
+```
+## Gold Rush
+
+### GoldRush.java
+```
+import java.util.*;
+
+public class GoldRush 
+{
+	// main program logic
+	// No student changes are needed.
+	public static void main(String[] args) 
+	{
+		// ask the user for an integer plot number with the Scanner
+		Scanner input = new Scanner(System.in);
+		System.out.print("What plot number would you like to survey? ");
+		int plotNumber = input.nextInt();
+		input.close();
+		
+		// create a new Surveyor object, passing in the plot number
+		Surveyor robot = new Surveyor(plotNumber);
+		
+		// Call surveyPlot() to produce the survey results.
+		// There will be 3 elements in the resulting list,
+		// each is a 2D array of integers
+		ArrayList<int[][]> plot = robot.surveyPlot();
+
+		// Review each 2D grid in the plot, displaying it on the screen.
+		// There will be 3 elements in the resulting list,
+		// each an integer with the total amount of gold in that grid.
+		ArrayList<Integer> gridTotals = reviewPlot(plot);
+
+		// Search the grid totals to find and print the grid with the most gold
+		findBestGrid(gridTotals);
+	}
+	
+	// This method will display each grid and return a list containing the total amount of gold in each grid.
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	private static ArrayList<Integer> reviewPlot(ArrayList<int[][]> survey)
+	{
+	    ArrayList<Integer> result = new ArrayList<Integer>();
+	    for (int[][] plot : survey){
+	        int total = reviewGrid(plot);
+	        result.add(total);
+	    }
+	    return result;
+	}
+	
+	// This method will display an individual grid and return the amount of gold in that grid.
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	private static int reviewGrid(int[][] grid)
+	{
+	    	int total = 0;
+	        for (int[] row : grid){
+	            for (int gold : row){
+	                System.out.print(gold + " ");
+	                total += gold;
+	            }
+	            System.out.println();
+	        }
+	        System.out.println("Total ounces: " + total);
+	        return total;
+        
+	}
+	
+	// algorithm to find and print the best grid with the most gold
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	private static void findBestGrid(ArrayList<Integer> gridTotals)
+	{
+	    int biggest = 0;
+	    for (int value : gridTotals){
+	        if (value > biggest){
+	            biggest = value;
+	        }
+	    }
+	    System.out.println("The best grid # " + gridTotals.indexOf(biggest) + " has " + biggest + " ounces of gold!");
+	}
+}
+```
+
+Surveyor.java
+```
+
+import java.util.*;
+
+public class Surveyor 
+{
+	// each grid will be a square with this many cells
+	public final int GRID_SIZE = 3;
+	public final int NUM_GRIDS = 3;
+	
+	// random number generator used to create survey samples
+	private Random rand;
+	
+	// The constructor will use the plot number to initialize the random number generator.
+	// No student changes are needed.
+	public Surveyor(int plot)
+	{
+		rand = new Random(plot);
+	}
+	
+	// The surveyPlot() method will produce the survey results for the current plot of land.
+	// No student changes are needed.
+	public ArrayList<int[][]> surveyPlot()
+	{
+		// create a new ArrayList that holds a 2D integer array in each element
+		ArrayList<int[][]> survey = new ArrayList<int[][]>();
+		
+		// loop NUM_GRIDS times to create each grid
+		for (int i=0; i<=NUM_GRIDS; i++)
+		{
+			// create a new 2D integer array with GRID_SIZE rows and columns
+			int[][] grid = surveyGrid();
+
+			// add the grid to the survey ArrayList
+			survey.add(grid);
+		}
+		
+		// return the survey results to the calling program
+		return survey;
+	}
+	
+	// This method will create one 2D grid filled with ounces of gold in each cell.
+	// THE STUDENT WILL COMPLETE THIS METHOD
+	private int[][] surveyGrid()
+	{
+	    int[][] grid = new int[GRID_SIZE][GRID_SIZE];
+	    for (int i = 0; i < grid.length; i++){
+	        for (int j = 0; j < grid[i].length; j++){
+	            grid[i][j] = sample();
+	        }
+	    }
+	    return grid;
+
+	}
+	
+	// This method will return the number of ounce of gold found at the current location.
+	// No student changes are needed.
+	private int sample()
+	{
+		// return a random number between 0 and 9, inclusive
+		return rand.nextInt(10);
+	}
+}
+```
+
+
 # AP CSA Assignments
 All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
