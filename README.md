@@ -2,7 +2,9 @@
 # AP CSA Assignments
 All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
-> I unfortunately do not have any paper assignments stored here. I apologize for any missing code/assignments. If you need help with anything, feel free to create an [issue](https://github.com/TrooperZ/CSA_Assignments/issues/new).
+> I unfortunately do not have any paper assignments stored here. I apologize for any missing or incorrect code/assignments. If you need help with anything, feel free to create an [issue](https://github.com/TrooperZ/CSA_Assignments/issues/new).
+> 
+> If you wish to view the full instructions for the assignment, download the .doc file inside of the project folder and open it.
 
 
 <details><summary>
