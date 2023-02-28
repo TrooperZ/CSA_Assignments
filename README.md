@@ -71,7 +71,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 </details>
 
-<details open><summary>	
+<details ><summary>	
 	
 ### [Cycle 4](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-4-assignments) (01/09/23 - 02/24/23):
 
@@ -87,6 +87,17 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Pong3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong3)
 - [Pong4](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong4)
 - [InheritancePractice](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#inheritancepractice)
+		
+</summary>
+	
+
+</details>
+
+<details open><summary>	
+	
+### [Cycle 5](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-5-assignments) (02/27/23 - 4/14/23):
+
+- Coming soon...
 		
 </summary>
 	
@@ -1908,3 +1919,5 @@ Given some classes, fill in the classes so the runner works as expected. Use inh
 
 
 <sub><sup>02/25/23</sup></sub>
+
+# [Cycle 5 Assignments](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle5)
