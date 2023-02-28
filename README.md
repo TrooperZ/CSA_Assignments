@@ -71,10 +71,10 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 </details>
 
-<details ><summary>	
+<details><summary>	
 	
 ### [Cycle 4](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-4-assignments) (01/09/23 - 02/24/23):
-
+</summary>
 - [ContactList](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#contactlist)
 - [GradeReport](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#gradereport)
 - [Journey](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#journey)
@@ -88,9 +88,6 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Pong4](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong4)
 - [InheritancePractice](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#inheritancepractice)
 		
-</summary>
-	
-
 </details>
 
 <details open><summary>	
