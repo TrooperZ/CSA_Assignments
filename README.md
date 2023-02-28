@@ -2226,4 +2226,28 @@ Objective:
 CompuScholar assignment. View details [here](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/GoldRush/GoldRush.html). 
 
 
-<sub><sup>02/0/23</sup></sub>
+<sub><sup>02/08/23</sup></sub>
+	
+____
+
+## [Pong1](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Pong1)
+
+Objective:
+Complete the code for the Block class located in Block.java.  Test Block using the 
+BlockTestOne.java and BlockTestTwo.java files.  The Block class is the building block for the Pong 
+project.   Ball and Paddle are Blocks.   Both Ball and Paddle will extend Block.  The Block class stores position, 
+size, and color properties.
+	
+Sample Output:
+```
+// x  –  y  –   wid – ht -  color
+100 150 10 10 java.awt.Color[r=0,g=0,b=0]
+50 50 30 30 java.awt.Color[r=0,g=0,b=0]
+350 350 15 15 java.awt.Color[r=255,g=0,b=0]
+450 50 20 60 java.awt.Color[r=0,g=255,b=0]
+false
+true
+```
+
+
+<sub><sup>02/22/23</sup></sub>
