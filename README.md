@@ -234,97 +234,6 @@ public class PaddleTestTwo extends Canvas implements KeyListener, Runnable
 }
 ```
 
-### Pong2
-```
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
-package Pong2;
-import java.awt.Color;
-import java.awt.Graphics;
-
-public class Ball extends Block
-{
-	private int xSpeed;
-	private int ySpeed;
-
-	public Ball()
-	{
-		super(200,200);
-		xSpeed = 3;
-		ySpeed = 1;
-	}
-
-	public Ball(int x, int y){
-		super(x,y);
-		xSpeed = 3;
-		ySpeed = 1;
-
-	}
-
-	public Ball(int x, int y, int xSpeed, int ySpeed){
-		super(x,y);
-		this.xSpeed = xSpeed;
-		this.ySpeed = ySpeed;
-	}
-
-	public Ball(int x, int y, int xSpeed, int ySpeed, Color color){
-		super(x,y);
-		super.setColor(color);
-		this.xSpeed = xSpeed;
-		this.ySpeed = ySpeed;
-	}
-
-	public Ball(int x, int y, int w, int h, Color color, int xSpeed, int ySpeed){
-		super(x,y, w, h, color);
-		this.xSpeed = xSpeed;
-		this.ySpeed = ySpeed;
-	}
-
-	public void setXSpeed(int xSpeed){
-		this.xSpeed = xSpeed;
-
-	}
-
-	public void setYSpeed(int ySpeed){
-		this.ySpeed = ySpeed;
-	}
-
-
-   public void moveAndDraw(Graphics window)
-   {
-	   Color curColor = super.getColor();
-	   super.setColor(Color.WHITE);
-	   super.draw(window);
-
-
-	   super.setColor(curColor);
-       setX(getX()+xSpeed);
-	   setY(getY()+xSpeed);
-	   super.draw(window);
-
-   }
-   
-   public boolean equals(Ball obj)
-	{
-		return (super.equals(obj) && this.xSpeed == obj.xSpeed && this.ySpeed == obj.ySpeed);
-	}   
-
-   public int getXSpeed(){
-		return xSpeed;
-   }
-
-   public int getYSpeed(){
-		return ySpeed;
-   }
-
-   public String toString(){
-		return super.getX()+" "+super.getY() + xSpeed + " " + ySpeed + " " + super.getColor();
-   }
-}
-```
-
-
 # AP CSA Assignments
 All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
@@ -2145,3 +2054,32 @@ true
 
 
 <sub><sup>02/22/23</sup></sub>
+	
+____
+
+## [Pong2](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Pong2)
+
+Objective:
+(Each assignment builds on each other)	
+
+Complete the code for the Ball class located in Ball.java.  Test the Ball class 
+using the BallTestOne.java and BallTestTwo.java files.   As you are testing Ball, you will also be 
+retesting Block as Ball is and extension of Block.  
+The Ball is going to bounce around the screen.  It will bounce around the screen because of checks placed in 
+the BallTest.  You can change the boundaries to create a larger field for the Ball.  Eventually, the Ball will 
+bounce off of the upper and lower walls and the paddles, but stop when it contacts the left and right walls.
+	
+Sample Output ( BallTestOne.java )
+```
+200 200 10 10 java.awt.Color[r=0,g=0,b=0]  3 1
+100 90 10 10 java.awt.Color[r=0,g=0,b=0]  3 1
+100 100 30 50 java.awt.Color[r=0,g=0,b=0]  3 1
+100 100 30 50 java.awt.Color[r=0,g=0,b=255]  3 1
+100 100 30 50 java.awt.Color[r=0,g=0,b=255]  5 6
+100 100 30 50 java.awt.Color[r=0,g=0,b=255]  5 6
+false
+true
+```
+
+
+<sub><sup>02/23/23</sup></sub>
