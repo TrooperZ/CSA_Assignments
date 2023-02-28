@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- saved from url=(0334)https://s3.amazonaws.com/csrepository/java2021/21/Act/activity.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHBTV2SX4FXCL2GQ%2F20230228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230228T160316Z&X-Amz-Expires=7200&X-Amz-SignedHeaders=host&X-Amz-Signature=a662752180a7191103efa241b53608fa01fe56547ae2b0535f3a4c6cad1cb8d0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gold Rush</title>
+<link href="./Gold Rush_files/lessonStyle2.css" rel="stylesheet" type="text/css">
+<link href="./Gold Rush_files/w3.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="./Gold Rush_files/prism_java.css">
+<script type="text/javascript" src="./Gold Rush_files/prism.js.download"></script><script src="./Gold Rush_files/clipboard.js.download"></script>
+<script type="text/javascript" src="./Gold Rush_files/jquery-3.6.0.min.js.download"></script>
+<script type="text/javascript" src="./Gold Rush_files/vocab_builder.js.download"></script>
+<script type="text/javascript" src="./Gold Rush_files/vocab_java.js.download"></script></head>
+<body id="tcbody" data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
+
+<div class="container">
+  <div class="w3-card-4 w3-purple w3-padding">
+  <h1 class="w3-opacity-min w3-center cs_chapter_title">Chapter Twenty-One: 2D Arrays</h1>
+  </div>
+  <div class="content">
+
+    <h2 class="w3-padding cs_lesson_title">Activity: Gold Rush</h2>
+    
+    <p><img src="./Gold Rush_files/C21Act1_Surveyor.png" class="fltrt" alt="Surveyor Robot" width="300" height="200">The Gold Rush Mining Company has a <strong>Surveyor</strong> robot that can check out a plot of land to see how many ounces of gold are present. You are going to complete a program that uses this robot to evaluate several sections within a plot and find the best section with the most ounces of gold. You'll use your knowledge of <strong>ArrayLists</strong> and <strong>2D arrays</strong> to complete this activity!
+    </p><h3 class="cs_section_title">Project Requirements</h3>
+    <p>Your program should analyze one plot of land. Each plot is identified by an integer number that is entered by the user.</p>
+    <pre class="cs-terminal">What plot number would you like to survey? 1</pre>
+    <p>Each plot of land is broken into sections. Each section can be visualized as a square, 2D grid. Every cell in the grid is an integer that holds the number of ounces of gold the <strong>Surveyor</strong> robot will find at that particular spot.</p>
+    <p style="text-align:center;"><img src="./Gold Rush_files/C21Act1_Plot.png" alt="Plot with 2D grids" width="700" height="300"></p>
+    <p>The survey results for a particular plot of land can be stored in an <strong>ArrayList</strong>. Each element of the <strong>ArrayList</strong> is one 2D grid of integers. Every integer will be between 0 and 9, representing the number of ounces of gold the <strong>Surveyor</strong> robot found at that spot.</p>
+    <div class="code-toolbar"><pre class="line-numbers language-java"><code class=" language-java">ArrayList<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> survey<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+    <p>If you print out all of the ounces of gold for a particular grid within the plot, it should make a pattern similar to the one below.</p>
+    <pre class="cs-terminal">5 8 7 
+3 4 4 
+4 6 8 </pre>
+    <p>The Gold Rush Mining company is very interested in selecting the <strong>best grid that has the most gold</strong>. Therefore, once the <strong>Surveyor</strong> robot has completed the survey, you will print out the number of ounces of gold in each grid cell as shown above. Additionally, your program must also add up all of the ounces of gold found within each grid and display the results. Those integer results can be stored in a separate <strong>ArrayList</strong> of <strong>Integer</strong> values, one for each grid in the plot.    </p>
+    <div class="code-toolbar"><pre class="line-numbers language-java"><code class=" language-java">ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> gridTotals<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+    <p>Finally, once you have printed all of the grids and calculated the total ounces of gold in each grid, you will write an algorithm to identify the grid with the highest amount of gold and display that amount and the corresponding grid number on the screen.</p>
+    <pre class="cs-terminal">The best grid # 2 has 53 ounces of gold!</pre>
+    <p>The following output demonstrates one successful run, where the user has selected plot #1 for the survey.</p>
+    <pre class="cs-terminal">What plot number would you like to survey? 1
+5 8 7 
+3 4 4 
+4 6 8 
+Total ounces: 49
+8 9 3 
+7 3 2 
+4 2 2 
+Total ounces: 40
+6 9 6 
+2 0 9 
+4 9 8 
+Total ounces: 53
+The best grid # 2 has 53 ounces of gold!</pre>
+    <h3 class="cs_section_title">Program Data Structures</h3>
+    <p>2D arrays and <strong>ArrayLists</strong> are used throughout this program. We track information as follows:    </p>
+    <div class="tctable">
+      <table>
+        <tbody><tr>
+          <th style="width:200px;">Data Structure</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><strong>int</strong>[][]</td>
+          <td>A 2D array of integers represents one grid in the overall plot. The grid is square with <strong>Surveyor.GRID_SIZE</strong> cells in each direction. Each cell contains an integer from 0 to 9 representing ounces of gold. </td>
+        </tr>
+        <tr>
+          <td><strong>ArrayList</strong>&lt;<strong>int</strong>[][]&gt;</td>
+          <td>A plot contains many grids as defined by <strong>Surveyor</strong>.<strong>NUM_GRIDS</strong>. Information on each grid is stored in a 2D array as described above. The 2D arrays for each grid are tracked in an <strong>ArrayList</strong>.</td>
+        </tr>
+        <tr>
+          <td><strong>ArrayList&lt;Integer&gt;</strong></td>
+          <td>Each grid contains a total amount of gold, found by adding together all of the gold in each of the 2D cells. The total gold found in each grid is tracked by an <strong>ArrayList</strong> of <strong>Integers</strong>.</td>
+        </tr>
+      </tbody></table>
+    </div>
+    <h3 class="cs_section_title" style="clear:both;">Class Details</h3>
+    <p>Your starting program contains two classes, <strong>GoldRush</strong> and <strong>Surveyor</strong>. You are responsible for completing certain methods in both classes.</p>
+    <p><strong>GoldRush Class</strong></p>
+    <p>The <strong>main</strong>() logic in <strong>GoldRush</strong> has been completed for you. The <strong>main</strong>() program will ask the user for a plot number, create the <strong>Surveyor</strong> object for that plot and use the <strong>Surveyor</strong> to get the list of 2D grids. It will then call the <strong>reviewPlot</strong>() method to study each grid, calculating the total amount of gold in each grid and printing that grid to the screen. Finally, it will call <strong>findBestGrid</strong>() to scan the list of gold totals and select the best grid.    </p>
+    <div class="tctable">
+      <table>
+        <tbody><tr>
+          <th style="width:200px;">Method</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><strong>public</strong> <strong>void main</strong>()</td>
+          <td>The <strong>main</strong>() program logic has been completed for you; no changes are required.</td>
+        </tr>
+        <tr>
+          <td><strong>private </strong> <strong>ArrayList</strong>&lt;<strong>Integer</strong>&gt; <strong>reviewPlot(</strong>ArrayList&lt;int[][]&gt; survey<strong>)</strong></td>
+          <td>The <strong>reviewPlot</strong>() method will iterate over the grids in the survey result and call <strong>reviewGrid</strong>() on each one. The resulting total ounces of gold for each grid is added to the returned list of integers. <strong>You will complete this method as part of the activity.</strong></td>
+        </tr>
+        <tr>
+          <td><strong>private</strong> <strong>int</strong> <strong>reviewGrid(</strong>int[][] grid))</td>
+          <td>The <strong>reviewGrid</strong>() method receives information on one grid. It will iterate over the 2D array, printing the grid contents to the screen and totaling up the overall amount of gold from each cell. The amount of gold is returned to the calling method.<strong> You will complete this method as part of the activity.</strong></td>
+        </tr>
+        <tr>
+          <td><strong>private void findBestGrid(</strong>ArrayList&lt;Integer&gt; gridTotals<strong>)</strong></td>
+          <td>The <strong>findBestGrid</strong>() method receives the list of gold totals for each grid. It will iterate over that list to find and print the grid with the highest amount of gold.<strong> You will complete this method as part of the activity.</strong></td>
+        </tr>
+      </tbody></table>
+    </div>
+    <p></p>
+    <p><strong>Surveyor Class</strong></p>
+    <p>The <strong>Surveyor</strong> class is responsible for producing the list of 2D grids with the numeric ounces of gold in each cell. The <strong>Surveyor</strong> class has the following<strong> </strong>methods and properties:</p>
+    <div class="tctable">
+      <table>
+        <tbody><tr>
+          <th style="width:200px;">Method or Property</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><strong>public</strong> <strong>final</strong> <strong>int</strong> GRID_SIZE</td>
+          <td>The <strong>GRID_SIZE</strong> class property contains the number of rows and columns in each grid.</td>
+        </tr>
+        <tr>
+          <td><strong>public</strong> <strong>final</strong> <strong>int</strong> NUM_GRIDS</td>
+          <td>The <strong>NUM_GRIDS</strong> class property contains the number of grids found on each plot.</td>
+        </tr>
+        <tr>
+          <td><strong>private</strong> <strong>Random</strong> rand</td>
+          <td>The <strong>Random</strong> object is used internally by the <strong>sample</strong>() method; you will not need to use this object in the code that you write.</td>
+        </tr>
+        <tr>
+          <td><strong>public</strong> <strong>Surveyor</strong>(<strong>int</strong> plot)</td>
+          <td>The <strong>Surveyor</strong>() constructor requires the plot number as input and will initialize the object. The method is provided complete for you in the activity starter; no changes are required.</td>
+        </tr>
+        <tr>
+          <td><strong>public</strong> <strong>ArrayList</strong>&lt;<strong>int</strong>[][]&gt; <strong>surveyPlot</strong>()</td>
+          <td>The <strong>surveyPlot</strong>() method will produce the survey results for the current plot of land. The survey results are stored in an <strong>ArrayList</strong> that contains a list of 2D <strong>int</strong> arrays.<strong> You will complete this method as part of the activity.</strong></td>
+        </tr>
+        <tr>
+          <td><strong>private</strong> <strong>int</strong> <strong>sample</strong>()</td>
+          <td>The <strong>sample</strong>() method is used internally by the survey logic to produce the number of ounces of gold at a particular grid cell. The method is provided complete for you in the activity starter; no changes are required.</td>
+        </tr>
+      </tbody></table>
+    </div>
+    
+    <h3 class="cs_section_title">Starting Code</h3>
+    <p>You will start with the <strong>GoldRush.java</strong> and <strong>Surveyor.java</strong> source files shown below. All of your work for this activity should go in the empty methods found in both classes.</p>
+    <p>If you are working offline, you can copy and paste the code below into the source files that you create. But if you are working  with CompuScholar's auto-graded system, you will find this code waiting for you when you click on the activity link in the course interface.</p>
+    <p class="cs-static-filename-tab">GoldRush.java</p>
+    <div class="code-toolbar"><pre class="cs-static-filename-tab line-numbers language-java"><code class=" language-java"><span class="token comment">// Copyright CompuScholar, Inc.</span>
+<span class="token comment">// Do not distribute or post in any public or private venue.</span>
+
+<span class="token comment">// The student should add their logic in the required areas.</span>
+
+<span class="token keyword keyword-import">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">GoldRush</span> 
+<span class="token punctuation">{</span>
+	<span class="token comment">// main program logic</span>
+	<span class="token comment">// No student changes are needed.</span>
+	<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> 
+	<span class="token punctuation">{</span>
+		<span class="token comment">// ask the user for an integer plot number with the Scanner</span>
+		Scanner input <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"What plot number would you like to survey? "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-int">int</span> plotNumber <span class="token operator">=</span> input<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		input<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		
+		<span class="token comment">// create a new Surveyor object, passing in the plot number</span>
+		Surveyor robot <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">Surveyor</span><span class="token punctuation">(</span>plotNumber<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		
+		<span class="token comment">// Call surveyPlot() to produce the survey results.</span>
+		<span class="token comment">// There will be 3 elements in the resulting list,</span>
+		<span class="token comment">// each is a 2D array of integers</span>
+		ArrayList<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> plot <span class="token operator">=</span> robot<span class="token punctuation">.</span><span class="token function">surveyPlot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token comment">// Review each 2D grid in the plot, displaying it on the screen.</span>
+		<span class="token comment">// There will be 3 elements in the resulting list,</span>
+		<span class="token comment">// each an integer with the total amount of gold in that grid.</span>
+		ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> gridTotals <span class="token operator">=</span> <span class="token function">reviewPlot</span><span class="token punctuation">(</span>plot<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token comment">// Search the grid totals to find and print the grid with the most gold</span>
+		<span class="token function">findBestGrid</span><span class="token punctuation">(</span>gridTotals<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">// This method will display each grid and return a list containing the total amount of gold in each grid.</span>
+	<span class="token comment">// THE STUDENT WILL COMPLETE THIS METHOD</span>
+	<span class="token keyword keyword-private">private</span> <span class="token keyword keyword-static">static</span> ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> <span class="token function">reviewPlot</span><span class="token punctuation">(</span>ArrayList<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> survey<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">// This method will display an individual grid and return the amount of gold in that grid.</span>
+	<span class="token comment">// THE STUDENT WILL COMPLETE THIS METHOD</span>
+	<span class="token keyword keyword-private">private</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-int">int</span> <span class="token function">reviewGrid</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> grid<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">// algorithm to find and print the best grid with the most gold</span>
+	<span class="token comment">// THE STUDENT WILL COMPLETE THIS METHOD</span>
+	<span class="token keyword keyword-private">private</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">findBestGrid</span><span class="token punctuation">(</span>ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> gridTotals<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+    <p class="cs-static-filename-tab">Surveyor.java</p>
+    <div class="code-toolbar"><pre class="cs-static-filename-tab line-numbers language-java"><code class=" language-java"><span class="token comment">// Copyright CompuScholar, Inc.</span>
+<span class="token comment">// Do not distribute or post in any public or private venue.</span>
+
+<span class="token comment">// The student should add their logic in the required areas.</span>
+<span class="token keyword keyword-import">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">Surveyor</span> 
+<span class="token punctuation">{</span>
+	<span class="token comment">// each grid will be a square with this many cells</span>
+	<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-final">final</span> <span class="token keyword keyword-int">int</span> GRID_SIZE <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+	<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-final">final</span> <span class="token keyword keyword-int">int</span> NUM_GRIDS <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+	
+	<span class="token comment">// random number generator used to create survey samples</span>
+	<span class="token keyword keyword-private">private</span> Random rand<span class="token punctuation">;</span>
+	
+	<span class="token comment">// The constructor will use the plot number to initialize the random number generator.</span>
+	<span class="token comment">// No student changes are needed.</span>
+	<span class="token keyword keyword-public">public</span> <span class="token function">Surveyor</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> plot<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		rand <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">Random</span><span class="token punctuation">(</span>plot<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">// The surveyPlot() method will produce the survey results for the current plot of land.</span>
+	<span class="token comment">// No student changes are needed.</span>
+	<span class="token keyword keyword-public">public</span> ArrayList<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> <span class="token function">surveyPlot</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token comment">// create a new ArrayList that holds a 2D integer array in each element</span>
+		ArrayList<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> survey <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		
+		<span class="token comment">// loop NUM_GRIDS times to create each grid</span>
+		<span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>NUM_GRIDS<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			<span class="token comment">// create a new 2D integer array with GRID_SIZE rows and columns</span>
+			<span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> grid <span class="token operator">=</span> <span class="token function">surveyGrid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token comment">// add the grid to the survey ArrayList</span>
+			survey<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>grid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		
+		<span class="token comment">// return the survey results to the calling program</span>
+		<span class="token keyword keyword-return">return</span> survey<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">// This method will create one 2D grid filled with ounces of gold in each cell.</span>
+	<span class="token comment">// THE STUDENT WILL COMPLETE THIS METHOD</span>
+	<span class="token keyword keyword-private">private</span> <span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">surveyGrid</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">// This method will return the number of ounce of gold found at the current location.</span>
+	<span class="token comment">// No student changes are needed.</span>
+	<span class="token keyword keyword-private">private</span> <span class="token keyword keyword-int">int</span> <span class="token function">sample</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token comment">// return a random number between 0 and 9, inclusive</span>
+		<span class="token keyword keyword-return">return</span> rand<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+    <h3 class="cs_section_title">Steps to Complete this Activity</h3>
+    <p>You will need to complete one method in the <strong>Surveyor</strong> class and three methods in <strong>GoldRush</strong>. The program will not build and run successfully until you have completed the first 3 methods listed below.</p>
+    <blockquote class="calloutPoint">Do not change any class property names or method parameter names that have already been defined. These names may be used in test cases to verify your code. You can choose your own local variable names when creating your internal method logic.</blockquote>
+    <p><strong>Surveyor surveyGrid()</strong></p>
+    <p>The <strong>surveyPlot</strong>() method in the <strong>Surveyor</strong> class has been written for you. Study that code; it will create an <strong>ArrayList</strong> to hold the 2D arrays for each grid, then call <strong>surveyGrid</strong>() to create each 2D array. You will need to complete the <strong>surveyGrid</strong>() method.    </p>
+    <div class="code-toolbar"><pre class="line-numbers language-java"><code class=" language-java"><span class="token keyword keyword-private">private</span> <span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">surveyGrid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+    <p>This method is responsible for creating a 2D array representing one grid. Each integer value in the array represents  several ounces of gold, which can be generated by calling the <strong>sample</strong>() method for each cell.    </p>
+    <ol>
+      <li>Declare a local variable of type <strong> </strong><strong>int</strong>[][] and initialize it with a new object.</li>
+      <li>Set up nested <strong>for</strong>() loops to iterate over all of the rows and columns in the grid. You will have <strong>GRID_SIZE</strong> rows and columns in each grid. The outer loop should iterate over rows and the inner loop over columns. 
+            <ul>
+              <li>Inside the innermost loop, call the <strong>sample</strong>() method, which will return an <strong>int</strong>. Store this <strong>int</strong> in the grid at the current row and column. Be sure to use row-major order, meaning the first index into the 2D array is the row: [row][col].</li>
+            </ul>
+      </li>
+      <li>When the 2D array is fully initialized, return a reference to that array from the method.</li>
+    </ol>
+    <p><strong>GoldRush reviewPlot()</strong></p>
+    <p>The <strong>reviewPlot</strong>() method in <strong>GoldRush</strong> is responsible for the overall processing of each grid. It receives as input the list of 2D grids and will return a list of integers representing the total amount of gold in each grid.</p>
+    <div class="code-toolbar"><pre class="line-numbers language-java"><code class=" language-java"><span class="token keyword keyword-private">private</span> <span class="token keyword keyword-static">static</span> ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> <span class="token function">reviewPlot</span><span class="token punctuation">(</span>ArrayList<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> survey<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+    <p>You will need to complete this method as follows.</p>
+    <ol start="4">
+      <li>Declare a local variable of type <strong>ArrayList</strong>&lt;<strong>Integer</strong>&gt; and initialize with a new object.</li>
+      <li>Create a loop to iterate over the input <span class="variable">survey</span> list. Inside the loop, for each 2D <strong>int</strong>[][] array in <span class="variable">survey</span>:
+<ol>
+          <li>Call the <strong>reviewGrid</strong>() method with this grid's 2D array as a parameter. The return value is the total amount of gold found in that grid. </li>
+          <li>Add that total amount of gold for this grid to the end of the <strong>ArrayList</strong> of <strong>Integers</strong> you created above.</li>
+        </ol>
+      </li>
+      <li>When all grids have been processed, return your <strong>ArrayList</strong> of <strong>Integers</strong> from the method.</li>
+    </ol>
+    <p><strong>GoldRush reviewGrid()</strong></p>
+    <p>The <strong>reviewGrid</strong>() method in <strong>GoldRush</strong> is responsible for displaying the 2D cells for one grid and returning the total amount of gold found in that grid.</p>
+    <div class="code-toolbar"><pre class="line-numbers language-java"><code class=" language-java"><span class="token keyword keyword-private">private</span> <span class="token keyword keyword-static">static</span> ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> <span class="token function">reviewPlot</span><span class="token punctuation">(</span>ArrayList<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> survey<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+    
+    <p>Complete this method as follows:</p>
+    <ol start="7">
+      <li>Declare and initialize a local variable to hold the total amount of gold found in the grid. Initialize it to 0.</li>
+      <li>Iterate over each of the 2D array cells with nested <strong>for</strong>() loops. For each cell:
+        <ol>
+          <li>Print out the integer value found in that cell, plus a space " ". Remember, to form a grid pattern on the screen, you need to use <strong>System</strong>.<strong>out</strong>.<strong>print</strong>() to display each element. </li>
+          <li>Add that integer value to your variable tracking the total amount of gold in the 2D array.
+          </li>
+        </ol>
+      </li>
+      <li>Add a call to <strong>System</strong>.<strong>out</strong>.<strong>println</strong>() after each row is complete to start a new line.</li>
+      <li>Finally, at the end of the grid, display the total amount of gold (e.g. X) with a message formatted as follows:</li>
+      <pre class="cs-terminal">Total ounces: X</pre>
+      <li>When you are done, return the total amount of gold found in this grid.      </li>
+    </ol>
+    <blockquote class="calloutStop">Checkpoint: If you run your program now, you should see all grids displayed with proper output formatting. If you select plot number 1, you should see the same grid results as demonstrated in the initial project description. At this point, you have not yet determined and printed the best grid and the highest amount of gold.</blockquote>
+      <p>Here is an additional example with results you should see at this point for plot #2.</p>
+      <pre class="cs-terminal">What plot number would you like to survey? 2
+8 2 0 
+7 9 0 
+6 9 7 
+Total ounces: 48
+8 4 6 
+4 4 4 
+6 7 9 
+Total ounces: 52
+0 1 8 
+7 9 2 
+6 4 2 
+Total ounces: 39</pre>
+    
+      <p><strong>GoldRush findBestGrid()</strong></p>
+      <p>Now that all grids have been displayed, and you have calculated the total number of ounces of gold in each grid, you need to write an <strong>algorithm</strong> to find the <strong>highest grid total</strong> and the <strong>corresponding grid index number</strong>. </p>
+      <div class="code-toolbar"><pre class="line-numbers language-java"><code class=" language-java"><span class="token keyword keyword-private">private</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">findBestGrid</span><span class="token punctuation">(</span>ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> gridTotals<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></div>
+      <p>We are going to leave this algorithm up to you! At this point, you should be confident writing code on your own to perform well-defined tasks. Here are some hints:      </p>
+        <ul>
+          <li>The totals for each grid are stored in the input <strong>ArrayList</strong> of <strong>Integers</strong>. The grid index number is just the index of the grid in that list.</li>
+          <li>Your algorithm should track both the highest total amount of gold and the index of the grid with that highest amount.</li>
+          <li>Your algorithm will likely want to use a traditional <strong>for</strong>() loop to iterate over the <span class="variable">gridTotals</span> <strong>ArrayList</strong>. That way you have the grid index value handy.</li>
+          <li>When you have finished examining each of the grid totals and selected the best one, print out the final message in the format shown below.</li>
+        </ul>
+        <p>If run with plot #1, your final message should look like this:</p>
+    <pre class="cs-terminal">The best grid # 2 has 53 ounces of gold!</pre>
+        <p>If run with plot #2, your final message should look like this:</p>
+    <pre class="cs-terminal">The best grid # 1 has 52 ounces of gold!</pre>
+    <h3 class="cs_section_title">Activity Output</h3>
+    <p>Each time you run the program and select a specific plot number such as 1, 2, or 3, you should get the same results. We have demonstrated the output plot #1 and plot #2 in the project details above. Here is a third run using plot #3.</p>
+    <pre class="cs-terminal">What plot number would you like to survey? 3
+4 0 0 
+1 8 2 
+9 4 9 
+Total ounces: 37
+1 5 2 
+7 4 1 
+6 6 7 
+Total ounces: 39
+6 9 1 
+2 5 5 
+8 3 7 
+Total ounces: 46
+The best grid # 2 has 46 ounces of gold!</pre>
+    
+    <h3 class="cs_section_title">Activity Rubric</h3>
+    <p>If your project is being automatically graded by our system, your grade will be calculated from 0 to 100 as follows: </p>
+    <div class="tctable">
+      <table>
+        <tbody><tr>
+          <th>Points</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>surveyGrid() creates new 2D array using GRID_SIZE dimensions</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>surveyGrid() calls sample() to produce values for each 2D array element</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>reviewPlot() creates new ArrayList of Integer objects</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>reviewPlot() calls reviewGrid()</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>reviewGrid() uses for() loops to iterate over rows and columns</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>reviewGrid() displays total ounces message</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>findBestGrid() prints message in the expected format</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Verify program output for mystery plot #1</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Verify program output for mystery plot #2</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Verify program output for mystery plot #3</td>
+        </tr>
+      </tbody></table>
+    </div>
+    <p>&nbsp;</p>
+    <p>Your program should work correctly for any plot number.</p>
+
+  </div>
+  <div class="footer">
+    <p>End of Activity</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
