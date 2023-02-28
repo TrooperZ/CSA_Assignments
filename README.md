@@ -1850,3 +1850,30 @@ true
 
 
 <sub><sup>02/23/23</sup></sub>
+	
+____
+
+## [Pong3](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Pong3)
+
+Objective:
+(Each assignment builds on each other)	
+
+Complete the code for the Paddle class located in Paddle.java.  Test the Paddle 
+class using the PaddleTestOne.java and PaddleTestTwo.java files.   As you are testing Paddle, you 
+will also be testing Block as Paddle is and extension of Block.  
+The Paddle class is going to move up and down in a fixed X position.  The Paddle will never move side to 
+side.
+	
+Sample Output ( PaddleTestOne.java )
+```
+10 10 10 10 java.awt.Color[r=0,g=0,b=0]  5
+100 90 10 10 java.awt.Color[r=0,g=0,b=0]  5
+100 100 10 10 java.awt.Color[r=0,g=0,b=0]  30
+100 100 30 50 java.awt.Color[r=0,g=0,b=0]  8
+100 100 30 20 java.awt.Color[r=0,g=255,b=0]  6
+false
+true
+```
+
+
+<sub><sup>02/24/23</sup></sub>
