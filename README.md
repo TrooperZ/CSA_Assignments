@@ -1877,3 +1877,19 @@ true
 
 
 <sub><sup>02/24/23</sup></sub>
+	
+____
+
+## [Pong4](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Pong4)
+
+Objective:
+(Each assignment builds on each other)	
+
+Now that Block, Ball, and Paddle have all been tested numerous times, we can put 
+them all together to make the Ping Pong Game.   The hardest part of the game is getting the paddles to hit the 
+ball.  I am giving you some logic to make the Ball hit the left paddle.  You must then create the logic to make 
+the Ball hit the right paddle.   You will use Pong.java to write the final game.
+
+
+
+<sub><sup>02/24/23</sup></sub>
