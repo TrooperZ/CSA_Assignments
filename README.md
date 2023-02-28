@@ -86,6 +86,7 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 - [Pong2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong2)
 - [Pong3](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong3)
 - [Pong4](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong4)
+- [InheritancePractice](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#inheritancepractice)
 		
 </summary>
 	
@@ -1895,3 +1896,15 @@ the Ball hit the right paddle.   You will use Pong.java to write the final game.
 
 
 <sub><sup>02/24/23</sup></sub>
+	
+____
+
+## [InheritancePractice](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/InheritancePractice)
+
+Objective:
+(This assignment was given verbally, not much instructions, but here's an outline)
+Given some classes, fill in the classes so the runner works as expected. Use inheritance and interfaces.
+
+
+
+<sub><sup>02/25/23</sup></sub>
