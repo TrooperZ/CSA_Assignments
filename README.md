@@ -1,4 +1,37 @@
+### Speed Rat:
 
+```
+public class SpeedRat extends LabRat{
+    public SpeedRat(int x, int y){
+        super(x, y, 1.5, "SpeedRat");
+    }
+    public void run(int x, int y){
+        move(x, y);
+        super.speed += (super.speed*0.1);
+
+    }
+}
+```
+
+### BlinkRat:
+```
+public class BlinkRat extends LabRat{
+    public BlinkRat(int x, int y){
+        super(x, y, 1.0, "BlinkRat");
+    }
+    public void teleport(int x, int y){
+        
+        if (distanceTo(x, y) < 3.0){
+            super.myX = x;
+            super.myY = y;
+        }
+        else{
+            move(x, y);
+        }
+
+    }
+}
+```
 # AP CSA Assignments
 All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
