@@ -1,3 +1,42 @@
+### MysterySeq:
+
+```
+        if (value < 1 ){
+            throw new IllegalArgumentException("Value of integer must be greater or equal to 1");
+        }
+
+        if (value == 1){
+            System.out.print("1");
+        }
+        else {
+            System.out.print((value+1)/2 + " ");
+            if (value != 2){
+                mysterySeq(value-2);
+            }
+        }
+        System.out.print((value+1)/2 + " ");
+
+
+
+/*  Non Recursive implementation:
+        String s = "";
+        if (value % 2 == 0){
+            for (int i = 1; i < value; i++){
+                s = i==1 ? i + s + " " + i : i + " " + s + " " + i;
+            }
+        }
+        else {
+            s = "1";
+            for (int i = 2; i < value; i++){
+                s = i + " " + s + " " + i;
+            }
+        }
+
+        System.out.println(s);*/
+	```
+
+
+
 ### Speed Rat:
 
 ```
