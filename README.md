@@ -1,20 +1,21 @@
 ### MysterySeq:
 
 ```
+    public static void mysterySeq(int value){
         if (value < 1 ){
             throw new IllegalArgumentException("Value of integer must be greater or equal to 1");
         }
 
         if (value == 1){
-            System.out.print("1");
+            System.out.print("1 ");
         }
         else {
             System.out.print((value+1)/2 + " ");
             if (value != 2){
                 mysterySeq(value-2);
             }
+            System.out.print((value+1)/2 + " ");
         }
-        System.out.print((value+1)/2 + " ");
 
 
 
