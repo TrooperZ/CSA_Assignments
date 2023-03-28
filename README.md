@@ -1,3 +1,27 @@
+### MysterySeq2:
+```
+public static void mysterySeq2(int value){
+        if (value < 1 ){
+            throw new IllegalArgumentException("Value of integer must be greater or equal to 1");
+        }
+        if(value == 1) {
+            System.out.print(1);
+            return;
+        }
+
+        if(value % 2 == 0) {
+            mysterySeq2(value-1);
+            System.out.print(" " + value * value);
+        } 
+        else {
+            System.out.print(value * value + " ");
+            mysterySeq2(value-1);
+        }
+
+    }
+    ```
+
+
 ### MysterySeq:
 
 ```
