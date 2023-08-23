@@ -189,9 +189,46 @@ All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
 <details open><summary>	
 	
-### [Cycle 5](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-5-assignments) (02/27/23 - 4/14/23):
+### [Cycle 5](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-5-assignments) (02/27/23 - 4/14/23): 
 
-- Coming soon...
+TODO: ADD CODE FOR THIS SECTION
+
+- [Interface](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#interface)
+- [Pong5](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong5)
+- [PongFinish](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pongfinish)
+- [mysterySeq](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mysteryseq)
+- [mysterySeq2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mysteryseq2)
+- [SierpinskiGasket](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#sierpinskigasket)
+- [at](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#at)
+- [exit](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#exit)
+- [RandomChoose](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#randomchoose)
+- [LogMessage](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#logmessage)
+- [Crossword](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#crossword)
+- [StringFormat](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#stringformat)
+
+		
+</summary>
+	
+
+</details>
+
+<details open><summary>	
+	
+### [Cycle 6](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#cycle-6-assignments) (04/10/23 - 5/31/23):
+
+- [Interface](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#interface)
+- [Pong5](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pong5)
+- [PongFinish](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#pongfinish)
+- [mysterySeq](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mysteryseq)
+- [mysterySeq2](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#mysteryseq2)
+- [SierpinskiGasket](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#sierpinskigasket)
+- [at](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#at)
+- [exit](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#exit)
+- [RandomChoose](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#randomchoose)
+- [LogMessage](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#logmessage)
+- [Crossword](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#crossword)
+- [StringFormat](https://github.com/TrooperZ/CSA_Assignments/blob/main/README.md#stringformat)
+- 
 		
 </summary>
 	
