@@ -1,101 +1,3 @@
-### MysterySeq2:
-```
-public static void mysterySeq2(int value){
-        if (value < 1 ){
-            throw new IllegalArgumentException("Value of integer must be greater or equal to 1");
-        }
-        if(value == 1) {
-            System.out.print(1);
-            return;
-        }
-
-        if(value % 2 == 0) {
-            mysterySeq2(value-1);
-            System.out.print(" " + value * value);
-        } 
-        else {
-            System.out.print(value * value + " ");
-            mysterySeq2(value-1);
-        }
-
-    }
-    ```
-
-
-### MysterySeq:
-
-```
-    public static void mysterySeq(int value){
-        if (value < 1 ){
-            throw new IllegalArgumentException("Value of integer must be greater or equal to 1");
-        }
-
-        if (value == 1){
-            System.out.print("1 ");
-        }
-        else {
-            System.out.print((value+1)/2 + " ");
-            if (value != 2){
-                mysterySeq(value-2);
-            }
-            System.out.print((value+1)/2 + " ");
-        }
-
-
-
-/*  Non Recursive implementation:
-        String s = "";
-        if (value % 2 == 0){
-            for (int i = 1; i < value; i++){
-                s = i==1 ? i + s + " " + i : i + " " + s + " " + i;
-            }
-        }
-        else {
-            s = "1";
-            for (int i = 2; i < value; i++){
-                s = i + " " + s + " " + i;
-            }
-        }
-
-        System.out.println(s);*/
-	```
-
-
-
-### Speed Rat:
-
-```
-public class SpeedRat extends LabRat{
-    public SpeedRat(int x, int y){
-        super(x, y, 1.5, "SpeedRat");
-    }
-    public void run(int x, int y){
-        move(x, y);
-        super.speed += (super.speed*0.1);
-
-    }
-}
-```
-
-### BlinkRat:
-```
-public class BlinkRat extends LabRat{
-    public BlinkRat(int x, int y){
-        super(x, y, 1.0, "BlinkRat");
-    }
-    public void teleport(int x, int y){
-        
-        if (distanceTo(x, y) < 3.0){
-            super.myX = x;
-            super.myY = y;
-        }
-        else{
-            move(x, y);
-        }
-
-    }
-}
-```
 # AP CSA Assignments
 All CSA coding assignments I did for junior year. 6th Period Armand Ramones
 
@@ -2087,5 +1989,106 @@ Finished version of Pong.
 
 
 <sub><sup>03/03/23</sup></sub>
+
+
+### MysterySeq2:
+```
+public static void mysterySeq2(int value){
+        if (value < 1 ){
+            throw new IllegalArgumentException("Value of integer must be greater or equal to 1");
+        }
+        if(value == 1) {
+            System.out.print(1);
+            return;
+        }
+
+        if(value % 2 == 0) {
+            mysterySeq2(value-1);
+            System.out.print(" " + value * value);
+        } 
+        else {
+            System.out.print(value * value + " ");
+            mysterySeq2(value-1);
+        }
+
+    }
+    ```
+
+
+### MysterySeq:
+
+```
+    public static void mysterySeq(int value){
+        if (value < 1 ){
+            throw new IllegalArgumentException("Value of integer must be greater or equal to 1");
+        }
+
+        if (value == 1){
+            System.out.print("1 ");
+        }
+        else {
+            System.out.print((value+1)/2 + " ");
+            if (value != 2){
+                mysterySeq(value-2);
+            }
+            System.out.print((value+1)/2 + " ");
+        }
+
+
+
+/*  Non Recursive implementation:
+        String s = "";
+        if (value % 2 == 0){
+            for (int i = 1; i < value; i++){
+                s = i==1 ? i + s + " " + i : i + " " + s + " " + i;
+            }
+        }
+        else {
+            s = "1";
+            for (int i = 2; i < value; i++){
+                s = i + " " + s + " " + i;
+            }
+        }
+
+        System.out.println(s);*/
+	```
+
+
+
+### Speed Rat:
+
+```
+public class SpeedRat extends LabRat{
+    public SpeedRat(int x, int y){
+        super(x, y, 1.5, "SpeedRat");
+    }
+    public void run(int x, int y){
+        move(x, y);
+        super.speed += (super.speed*0.1);
+
+    }
+}
+```
+
+### BlinkRat:
+```
+public class BlinkRat extends LabRat{
+    public BlinkRat(int x, int y){
+        super(x, y, 1.0, "BlinkRat");
+    }
+    public void teleport(int x, int y){
+        
+        if (distanceTo(x, y) < 3.0){
+            super.myX = x;
+            super.myY = y;
+        }
+        else{
+            move(x, y);
+        }
+
+    }
+}
+```
+
 
 
