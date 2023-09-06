@@ -2055,7 +2055,7 @@ Given some classes, fill in the classes so the runner works as expected. Use inh
 
 ____
 
-## [Interface] (https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Pong4)
+## [Interface] (https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle5/Interface)
 
 ### AKA: Shape
 
@@ -2069,5 +2069,23 @@ Canvas note:
 
 
 <sub><sup>02/27/23</sup></sub>
+
+____
+
+## [Pong5] (https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Pong4)
+
+This assignment is a duplicate of [Pong4](https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle4/Pong4)
+
+
+<sub><sup>03/03/23</sup></sub>
+
+____
+
+## [PongFinish] (https://github.com/TrooperZ/CSA_Assignments/tree/main/Lab_Assignments/Cycle5/PongFinish)
+
+Finished version of Pong.
+
+
+<sub><sup>03/03/23</sup></sub>
 
 
